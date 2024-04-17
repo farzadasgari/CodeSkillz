@@ -15,7 +15,7 @@ CodeSkillz is a web application designed to help users improve their programming
 - [Usage](#Usage)
 - [Contributing](#Contributing)
 - [License](#License)
-- [Acknowledgments](#Acknowledgments)
+- [Acknowledgements](#Acknowledgements)
 - [Contact](#Contact)
 - [Links](#Links)
 
