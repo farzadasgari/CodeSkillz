@@ -36,13 +36,13 @@ To run CodeSkillz locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/codeskillz.git
+   git clone https://github.com/farzadasgari/CodeSkillz
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd codeskillz
+   cd CodeSkillz
    pip install -r requirements.txt
    ```
 
