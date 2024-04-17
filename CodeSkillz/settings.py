@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 
@@ -83,7 +84,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-STATIC_ROOT = 'main/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'main/static')
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media/'
