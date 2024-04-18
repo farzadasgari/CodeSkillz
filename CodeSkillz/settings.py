@@ -1,10 +1,12 @@
 import os
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
+from random import choice
+from string import ascii_lowercase
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = get_random_secret_key()
+SECRET_KEY = ''.join(choice(ascii_lowercase) for i in range(32))
 
 DEBUG = True
 
