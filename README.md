@@ -88,7 +88,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Contact
 
-If you have any questions or suggestions regarding CodeSkillz, feel free to contact us at std_farzad.asgari@alumni.khu.ir or farzad.developer13@gmail.com.
+If you have any questions or suggestions regarding CodeSkillz, feel free to contact us at std_farzad.asgari@alumni.khu.ac.ir or farzad.developer13@gmail.com.
 
 ## Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://farzadasgari.ir/)
