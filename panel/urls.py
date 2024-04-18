@@ -4,6 +4,3 @@ from .views import panel
 urlpatterns = [
     re_path(r'', panel, name='panel')
 ]
-
-
-

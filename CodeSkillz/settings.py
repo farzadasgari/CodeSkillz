@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'main.apps.MainConfig',
+    'center.apps.CenterConfig',
     'panel.apps.PanelConfig',
 ]
 
