@@ -1,0 +1,16 @@
+#content_CodSkils {
+    margin-top: 80px;
+    min-height: 345px;
+    padding: 0px;
+}
+
+#footer_CodeSkils {
+    margin-left: 80px;
+    text-align: left
+}
+
+@media screen and (max-width: 680px) {
+    #footer_CodeSkils {
+        margin-left: 0px;
+    }
+}
