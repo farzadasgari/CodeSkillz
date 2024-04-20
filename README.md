@@ -1,3 +1,5 @@
+![CodeSkillz](https://raw.githubusercontent.com/farzadasgari/CodeSkillz/main/media/CodeSkillz/README.png)
+
 # CodeSkillz
 
 CodeSkillz is a web application designed to help users improve their programming skills through interactive coding challenges and assessments. Users can practice coding in various programming languages, submit their solutions, and receive instant feedback on their performance.
