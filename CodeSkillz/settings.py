@@ -97,3 +97,15 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "CodeSkillz",
+
+    "site_header": "CodeSkillz | Superuser Area",
+
+    "site_brand": "CodeSkillz",
+
+    "welcome_sign": "CodeSkillz | Superuser Area",
+
+    "copyright": "Developed By: <a href='https://github.com/PixoMo'>PixoMo</a>",
+}
