@@ -1,16 +1,22 @@
 #content_CodSkils {
     margin-top: 80px;
     min-height: 345px;
-    padding: 0px;
+    padding: 0;
 }
 
 #footer_CodeSkils {
-    margin-left: 80px;
-    text-align: left
+    text-align: left;
+    background-color: #1c2331;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 80px;
 }
 
 @media screen and (max-width: 680px) {
     #footer_CodeSkils {
-        margin-left: 0px;
+        margin-left: 0;
+        padding-left: 0;
     }
 }

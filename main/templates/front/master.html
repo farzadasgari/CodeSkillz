@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{% static 'front/css/fontawesome/css/all.min.css' %}">
   <link rel="icon" href="{% static 'front/img/favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'front/css/CodeSkillz.css' %}">
-  <title>CodeSkillz</title>
+  <title>{{ main.browser_title }}</title>
 </head>
 <body>
 <div class="page-loader">
@@ -22,7 +22,7 @@
     </svg>
   </div>
   <div class="page-loader-info">
-    <p class="page-loader-info-title">CodeSkillz</p>
+    <p class="page-loader-info-title">{{ main.website_title }}</p>
     <p class="page-loader-info-text">Loading...</p>
   </div>
   <div class="page-loader-indicator loader-bars">
@@ -510,7 +510,7 @@
           <use xlink:href="#svg-logo-vikinger"></use>
         </svg>
       </div>
-      <h1 class="header-brand-text">CodeSkillz</h1>
+      <h1 class="header-brand-text">{{ main.browser_title }}</h1>
     </div>
   </div>
   <div class="header-actions">
@@ -1638,14 +1638,8 @@
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div
-                class="text-center p-3"
-                style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/"
-            >MDBootstrap.com</a
-            >
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            {{ main.copyright | safe }}
         </div>
         <!-- Copyright -->
     </footer>

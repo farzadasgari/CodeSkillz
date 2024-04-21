@@ -2,8 +2,8 @@ from .models import Main
 
 
 def main_details(request):
-    # main = Main.objects.reverse()[0]
+    main = Main.objects.reverse()[0]
     context = {
-        'main': 'main',
+        'main': main,
     }
     return context
