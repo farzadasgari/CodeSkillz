@@ -3,8 +3,7 @@
     min-height: 345px;
     padding: 0;
 }
-
-#footer_CodeSkils {
+#footer_CodeSkillz {
     text-align: left;
     background-color: #1c2331;
     position: absolute;
@@ -13,10 +12,8 @@
     margin-left: 0;
     padding-left: 80px;
 }
-
 @media screen and (max-width: 680px) {
-    #footer_CodeSkils {
-        margin-left: 0;
+    #footer_CodeSkillz {
         padding-left: 0;
     }
 }
