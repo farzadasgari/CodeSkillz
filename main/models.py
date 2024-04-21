@@ -4,7 +4,7 @@ from django.db import models
 
 class Main(models.Model):
     class Meta:
-        verbose_name_plural = 'main_detail'
+        verbose_name_plural = 'Main Details'
 
     website_title = models.CharField(max_length=30, blank=True)
     browser_title = models.CharField(max_length=30, blank=True)
