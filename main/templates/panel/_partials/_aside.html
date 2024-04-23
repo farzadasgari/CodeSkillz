@@ -48,18 +48,16 @@
               </div>
             </ul>
           </li>
-
           <li class="has-sub">
             <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#basics"
                aria-expanded="false" aria-controls="basics">
               <i class="mdi mdi-wrench"></i>
               <span class="nav-text">Basics</span> <b class="caret"></b>
             </a>
-
             <ul class="collapse" id="basics" data-parent="#sidebar-menu">
               <div class="sub-menu">
                 <li class="">
-                  <a class="sidenav-item-link" href="chat.html">
+                  <a class="sidenav-item-link" href="{% url 'panel_configs' %}">
                     <span class="nav-text">Configs</span>
                   </a>
                 </li>
