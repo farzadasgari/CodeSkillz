@@ -52,7 +52,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
-                'main.cotext_processor.main_details',
+                'main.context_processor.main_details',
             ],
         },
     },
