@@ -167,19 +167,6 @@
     </footer>
   </div>
 </div>
-<script src="{% static 'panel/plugins/jquery/jquery.min.js' %}"></script>
-<script src="{% static 'panel/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'panel/plugins/simplebar/simplebar.min.js' %}"></script>
-<script src="{% static 'panel/plugins/charts/Chart.min.js' %}"></script>
-<script src="{% static 'panel/js/chart.js' %}"></script>
-<script src="{% static 'panel/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js' %}"></script>
-<script src="{% static 'panel/plugins/jvectormap/jquery-jvectormap-world-mill.js' %}"></script>
-<script src="{% static 'panel/js/vector-map.js' %}"></script>
-<script src="{% static 'panel/plugins/daterangepicker/moment.min.js' %}"></script>
-<script src="{% static 'panel/plugins/daterangepicker/daterangepicker.js' %}"></script>
-<script src="{% static 'panel/js/date-range.js' %}"></script>
-<script src="{% static 'panel/js/sleek.js' %}"></script>
-<link href="{% static 'panel/options/optionswitch.css' %}" rel="stylesheet">
-<script src="{% static 'panel/options/optionswitcher.js' %}"></script>
+{% include 'panel/_partials/_scripts.html' %}
 </body>
 </html>
