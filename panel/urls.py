@@ -4,6 +4,6 @@ from main.views import panel_configs
 
 
 urlpatterns = [
-    re_path(r'', panel, name='panel'),
-    re_path(r'^configs/$', panel_configs, name='panel_configs'),
+    re_path(r'^$', panel, name='panel'),
+    re_path(r'^basics/configs/$', panel_configs, name='panel_configs'),
 ]
