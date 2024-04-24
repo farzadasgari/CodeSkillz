@@ -1,1 +1,10 @@
 {% extends 'panel/master.html' %}
+{% block content %}
+    <form action="" method="POST">
+        {% for form in forms %}
+            {{ form.label_tag }}
+            {{ form }}
+        {% endfor %}
+        <button class="btn btn-dark" type="button">Send</button>
+    </form>
+{% endblock %}
