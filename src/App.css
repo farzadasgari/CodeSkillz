@@ -629,11 +629,6 @@ body {
   font-weight: 700;
 }
 
-.text-rose-500 {
-  --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity, 1));
-}
-
 .text-primary {
   color: hsl(var(--primary));
 }
