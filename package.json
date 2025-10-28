@@ -3,6 +3,40 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "description": "CodeSkillz: RESTARTED online coding platform with live classes, online courses, Django backend, React frontend—details soon!",
+  "keywords": [
+    "python",
+    "django",
+    "e-learning",
+    "react",
+    "vite",
+    "typescript",
+    "webapp",
+    "tailwindcss",
+    "responsive"
+  ],
+  "author": {
+    "name": "Farzad Asgari",
+    "email": "khufarzadasgari@gmail.com",
+    "url": "https://farzadasgari.ir"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/farzadasgari/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farzadasgari/CodeSkillz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/farzadasgari/CodeSkillz/issues"
+  },
+  "profiles": {
+    "googleScholar": "https://scholar.google.com/citations?user=Rhue_kkAAAAJ&hl=en",
+    "gitHub": "https://github.com/farzadasgari",
+    "x": "https://x.com/farzad_asg",
+    "linkedin": "https://www.linkedin.com/in/farzad-asgari",
+    "researchgate": "https://www.researchgate.net/profile/Farzad-Asgari",
+    "orcid": "https://orcid.org/0009-0008-3800-0408"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -45,5 +79,9 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
