@@ -600,6 +600,22 @@ body {
   color: hsl(var(--foreground));
 }
 
+.flex {
+  display: flex;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .text-center {
   text-align: center;
 }
@@ -616,6 +632,10 @@ body {
 .text-rose-500 {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity, 1));
+}
+
+.text-primary {
+  color: hsl(var(--primary));
 }
 
 @keyframes enter {
