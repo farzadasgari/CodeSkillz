@@ -19,13 +19,16 @@ CodeSkillz
 
 # The project has RESTARTED. More details coming soon...
 
+## Tech Stack
+
+- **Backend**: Python, Django (for REST API, user auth, payments).
+- **Frontend**: React, TypeScript (for dynamic UI), Tailwind CSS (styling).
+- **Database**: PostgreSQL.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/farzadasgari/CodeSkillz/blob/ca7da2092f015cd4759f8f91dafdddeca5ca87ea/LICENSE) file for details.
 
-## Acknowledgements
-
-- Special thanks to [Django](https://www.djangoproject.com/) for providing the web framework for CodeSkillz.
 
 ## Contact
 
