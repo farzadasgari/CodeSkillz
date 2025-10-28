@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import {Button} from "@/components/ui/button"
-import { Video, ArrowRight } from "lucide-react"
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Video, ArrowRight } from 'lucide-react';
 
 const Home = () => {
     return (
@@ -16,14 +16,18 @@ const Home = () => {
                 </div>
 
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 left-10 text-secondary/70 text-6xl font-mono animate-pulse">&lt;/&gt;</div>
-                    <div className="absolute bottom-40 right-20 text-secondary/60 text-8xl font-mono animate-pulse delay-500">&#123; &#125;</div>
+                    <div className="absolute top-20 left-10 text-secondary/70 text-6xl font-mono animate-pulse">
+                        &lt;/&gt;
+                    </div>
+                    <div className="absolute bottom-40 right-20 text-secondary/60 text-8xl font-mono animate-pulse delay-500">
+                        &#123; &#125;
+                    </div>
                 </div>
 
                 <div className="container mx-auto px-4 z-10">
                     <div className="max-w-3xl animate-slide-up">
                         <h1 className="font-heading font-bold text-5xl md:text-7xl text-primary-foreground mb-6 leading-tight">
-                            Master Coding with{" "}
+                            Master Coding with{' '}
                             <span className="text-secondary">CodeSkillz</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8">
@@ -31,7 +35,11 @@ const Home = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 mb-12">
                             <Link to="/courses">
-                                <Button variant="secondary" size="lg" className="w-full sm:w-auto text-lg">
+                                <Button
+                                    variant="secondary"
+                                    size="lg"
+                                    className="w-full sm:w-auto text-lg"
+                                >
                                     Browse Courses
                                     <ArrowRight className="ml-2" />
                                 </Button>
@@ -49,7 +57,7 @@ const Home = () => {
                 </div>
             </section>
         </div>
-    )
-}
+    );
+};
 
 export default Home;
