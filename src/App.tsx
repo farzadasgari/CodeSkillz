@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/CodeSkillz">
             <div className="flex flex-col min-h-screen">
                 <main className="flex-1">
                     <Routes>
