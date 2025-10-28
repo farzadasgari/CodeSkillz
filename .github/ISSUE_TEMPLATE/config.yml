@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Questions
+    url: https://github.com/farzadasgari/CodeSkillz/discussions
+    about: Ask questions or discuss ideas in Discussions
+  - name: Security Vulnerability
+    url: mailto:khufarzadasgari@gmail.com
+    about: Report security issues privately
