@@ -3,7 +3,7 @@ import {
     useContext,
     useEffect,
     useState,
-    ReactNode,
+    type ReactNode,
 } from 'react';
 import { useTranslation } from 'react-i18next';
 
