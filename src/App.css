@@ -642,8 +642,8 @@ body.font-persian {
   bottom: -0.25rem;
 }
 
-.bottom-40 {
-  bottom: 10rem;
+.bottom-10 {
+  bottom: 2.5rem;
 }
 
 .left-0 {
@@ -662,8 +662,8 @@ body.font-persian {
   right: 0px;
 }
 
-.right-20 {
-  right: 5rem;
+.right-10 {
+  right: 2.5rem;
 }
 
 .top-0 {
@@ -672,14 +672,6 @@ body.font-persian {
 
 .top-20 {
   top: 5rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .z-0 {
@@ -737,10 +729,6 @@ body.font-persian {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -785,10 +773,6 @@ body.font-persian {
   height: 1.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -801,16 +785,12 @@ body.font-persian {
   height: 1px;
 }
 
-.min-h-\[90vh\] {
-  min-height: 90vh;
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
 }
 
 .w-0 {
@@ -941,12 +921,12 @@ body.font-persian {
   gap: 1rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -1117,16 +1097,12 @@ body.font-persian {
   padding-right: 0.5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .align-middle {
@@ -1157,11 +1133,6 @@ body.font-persian {
 
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 
@@ -1197,10 +1168,6 @@ body.font-persian {
   font-weight: 600;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -1231,14 +1198,6 @@ body.font-persian {
 
 .text-secondary-foreground {
   color: hsl(var(--secondary-foreground));
-}
-
-.text-secondary\/60 {
-  color: hsl(var(--secondary) / 0.6);
-}
-
-.text-secondary\/70 {
-  color: hsl(var(--secondary) / 0.7);
 }
 
 .text-secondary\/50 {
@@ -1427,17 +1386,6 @@ body.font-persian {
   color: hsl(var(--accent-foreground));
 }
 
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:ring-0:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
 .focus-visible\:outline-none:focus-visible {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1485,28 +1433,6 @@ body.font-persian {
 
 .data-\[disabled\]\:opacity-50[data-disabled] {
   opacity: 0.5;
-}
-
-.data-\[state\=closed\]\:outline-none[data-state="closed"] {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.data-\[state\=open\]\:outline-none[data-state="open"] {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.data-\[state\=closed\]\:ring-0[data-state="closed"] {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.data-\[state\=open\]\:ring-0[data-state="open"] {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .data-\[state\=open\]\:animate-in[data-state="open"] {
@@ -1562,10 +1488,6 @@ body.font-persian {
 }
 
 @media (min-width: 640px) {
-  .sm\:inline-flex {
-    display: inline-flex;
-  }
-
   .sm\:w-auto {
     width: auto;
   }
@@ -1582,10 +1504,6 @@ body.font-persian {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:min-h-\[90vh\] {
-    min-height: 90vh;
   }
 
   .md\:min-h-\[80vh\] {
