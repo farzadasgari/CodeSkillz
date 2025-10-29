@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Code2 } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, Code2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +11,11 @@ const Header = () => {
     const isActive = (path: string) => location.pathname === path;
 
     const navLinks = [
-        { name: t('header.home'), path: "/" },
-        { name: t('header.courses'), path: "/courses" },
-        { name: t('header.about'), path: "/about" },
-        { name: t('header.blog'), path: "/blog" },
-        { name: t('header.contact'), path: "/contact" },
+        { name: t('header.home'), path: '/' },
+        { name: t('header.courses'), path: '/courses' },
+        { name: t('header.about'), path: '/about' },
+        { name: t('header.blog'), path: '/blog' },
+        { name: t('header.contact'), path: '/contact' },
     ];
 
     return (
@@ -25,8 +25,8 @@ const Header = () => {
                     <Link to="/" className="flex items-center gap-2 group">
                         <Code2 className="w-8 h-8 text-secondary transition-transform group-hover:scale-110" />
                         <span className="text-2xl font-heading font-bold text-primary-foreground">
-              Code<span className="text-secondary">Skillz</span>
-            </span>
+                            Code<span className="text-secondary">Skillz</span>
+                        </span>
                     </Link>
                     <div className="hidden md:flex items-center gap-8">
                         {navLinks.map((link) => (
@@ -35,14 +35,16 @@ const Header = () => {
                                 to={link.path}
                                 className={`font-medium transition-colors relative group ${
                                     isActive(link.path)
-                                        ? "text-secondary"
-                                        : "text-primary-foreground hover:text-secondary"
+                                        ? 'text-secondary'
+                                        : 'text-primary-foreground hover:text-secondary'
                                 }`}
                             >
                                 {link.name}
                                 <span
                                     className={`absolute -bottom-1 left-0 h-0.5 bg-secondary transition-all ${
-                                        isActive(link.path) ? "w-full" : "w-0 group-hover:w-full"
+                                        isActive(link.path)
+                                            ? 'w-full'
+                                            : 'w-0 group-hover:w-full'
                                     }`}
                                 />
                             </Link>
@@ -54,7 +56,11 @@ const Header = () => {
                         className="md:hidden text-primary-foreground hover:text-secondary transition-colors"
                         aria-label="Toggle menu"
                     >
-                        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        {isMenuOpen ? (
+                            <X className="w-6 h-6" />
+                        ) : (
+                            <Menu className="w-6 h-6" />
+                        )}
                     </button>
                 </div>
 
@@ -69,8 +75,8 @@ const Header = () => {
                                     onClick={() => setIsMenuOpen(false)}
                                     className={`font-medium transition-colors py-2 ${
                                         isActive(link.path)
-                                            ? "text-secondary"
-                                            : "text-primary-foreground hover:text-secondary"
+                                            ? 'text-secondary'
+                                            : 'text-primary-foreground hover:text-secondary'
                                     }`}
                                 >
                                     {link.name}

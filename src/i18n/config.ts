@@ -10,11 +10,11 @@ import masterFA from '@/locales/fa/master.json';
 const resources = {
     en: {
         home: homeEN,
-        master: masterEN
+        master: masterEN,
     },
     fa: {
         home: homeFA,
-        master: masterFA
+        master: masterFA,
     },
 };
 
