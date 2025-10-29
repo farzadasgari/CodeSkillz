@@ -25,7 +25,11 @@ const Header = () => {
             <nav className="container mx-auto px-4 py-5">
                 <div className="flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2 group">
-                        <Code2 className="w-8 h-8 text-secondary transition-transform group-hover:scale-110" />
+                        <img
+                            src="CodeSkillz/csz/icon.webp"
+                            alt="CodeSkillz icon"
+                            className="w-8 transition-transform group-hover:scale-125 duration-300"
+                        />
                         <span className="text-2xl font-heading font-bold text-primary-foreground">
                             Code<span className="text-secondary">Skillz</span>
                         </span>
