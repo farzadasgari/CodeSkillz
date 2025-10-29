@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2 group">
                         <img
-                            src="CodeSkillz/csz/icon.webp"
+                            src="/CodeSkillz/csz/icon.webp"
                             alt="CodeSkillz icon"
                             className="w-8 transition-transform group-hover:scale-110 duration-300"
                         />
