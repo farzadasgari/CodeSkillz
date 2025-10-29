@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {Link, useLocation} from "react-router-dom";
 import {Menu, X, Code2} from "lucide-react";
+import {Button} from "@/components/ui/button";
 import {useTranslation} from "react-i18next";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -52,6 +53,11 @@ const Header = () => {
                     </div>
                     <div className="hidden md:flex items-center gap-4">
                         <LanguageSwitcher/>
+                        <Link to="/auth">
+                            <Button variant="secondary" className="font-semibold shadow-lg">
+                                {t('header.getStarted')}
+                            </Button>
+                        </Link>
                     </div>
 
                     <button
@@ -81,6 +87,11 @@ const Header = () => {
                             ))}
                             <div className="flex flex-col gap-2 mt-4">
                                 <LanguageSwitcher/>
+                                <Link to="/auth" className="w-full">
+                                    <Button variant="secondary" className="w-full font-semibold shadow-lg">
+                                        {t('header.getStarted')}
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
