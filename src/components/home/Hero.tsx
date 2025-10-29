@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button.tsx';
-import { ArrowRight, Video } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Video } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Hero = () => {
     const { t } = useTranslation('home');
+    const { language } = useLanguage();
     return (
         <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center bg-gradient-hero overflow-hidden pt-32">
             <div className="absolute inset-0 z-0">
@@ -44,7 +46,11 @@ export const Hero = () => {
                                 className="w-full sm:w-auto text-lg"
                             >
                                 {t('hero.browseCourses')}
-                                <ArrowRight className="ml-2" />
+                                {language === 'fa' ? (
+                                    <ArrowLeft className="mr-2" />
+                                ) : (
+                                    <ArrowRight className="ml-2" />
+                                )}
                             </Button>
                         </Link>
                         <Button
