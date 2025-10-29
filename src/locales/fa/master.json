@@ -1,0 +1,14 @@
+{
+  "header": {
+    "home": "خانه",
+    "courses": "دوره‌ها",
+    "about": "درباره ما",
+    "blog": "بلاگ",
+    "contact": "تماس",
+    "getStarted": "شروع کنید",
+    "login": "ورود",
+    "signup": "ثبت‌نام",
+    "dashboard": "داشبورد",
+    "logout": "خروج"
+  }
+}

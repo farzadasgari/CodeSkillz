@@ -1,0 +1,14 @@
+{
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Log Out"
+  }
+}
