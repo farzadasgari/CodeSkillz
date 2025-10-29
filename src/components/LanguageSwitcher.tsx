@@ -13,8 +13,8 @@ const LanguageSwitcher = () => {
     const { language, changeLanguage } = useLanguage();
 
     const languages = [
-        { code: 'en', name: 'English', flag: '🇬🇧', dir:'ltr' },
-        { code: 'fa', name: 'فارسی', flag: '🇮🇷', dir:'rtl' },
+        { code: 'en', name: 'English', flag: '🇬🇧', dir: 'ltr' },
+        { code: 'fa', name: 'فارسی', flag: '🇮🇷', dir: 'rtl' },
     ];
 
     return (
