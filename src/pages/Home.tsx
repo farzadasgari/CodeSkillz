@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Video, ArrowRight } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+    const { t } = useTranslation('home');
     return (
         <div className="min-h-screen">
             <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden pt-20">
@@ -27,11 +29,11 @@ const Home = () => {
                 <div className="container mx-auto px-4 z-10">
                     <div className="max-w-3xl animate-slide-up">
                         <h1 className="font-heading font-bold text-5xl md:text-7xl text-primary-foreground mb-6 leading-tight">
-                            Master Coding with{' '}
-                            <span className="text-secondary">CodeSkillz</span>
+                            {t('hero.title')}{' '}
+                            <span className="text-secondary">{t('hero.titleHighlight')}</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8">
-                            Code like a Pro
+                            {t('hero.subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 mb-12">
                             <Link to="/courses">
@@ -40,7 +42,7 @@ const Home = () => {
                                     size="lg"
                                     className="w-full sm:w-auto text-lg"
                                 >
-                                    Browse Courses
+                                    {t('hero.browseCourses')}
                                     <ArrowRight className="ml-2" />
                                 </Button>
                             </Link>
@@ -50,7 +52,7 @@ const Home = () => {
                                 className="w-full sm:w-auto text-lg text-primary-foreground border-primary-foreground/50 hover:border-primary-foreground hover:bg-primary-foreground/10"
                             >
                                 <Video className="mr-2" />
-                                Watch Intro
+                                {t('hero.watchIntro')}
                             </Button>
                         </div>
                     </div>
