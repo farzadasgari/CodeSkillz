@@ -1,7 +1,7 @@
-import {Link} from "react-router-dom";
-import {Button} from "@/components/ui/button.tsx";
-import {ArrowRight, Video} from "lucide-react";
-import {useTranslation} from "react-i18next";
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button.tsx';
+import { ArrowRight, Video } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
     const { t } = useTranslation('home');
@@ -27,11 +27,11 @@ export const Hero = () => {
 
             <div className="container mx-auto px-4 z-10">
                 <div className="max-w-3xl animate-slide-up">
-                    <h1 className="font-heading font-bold text-5xl md:text-7xl text-primary-foreground mb-6 leading-tight">
-                        {t('hero.title')}{' '}
-                        <span className="text-secondary">
-                                {t('hero.titleHighlight')}
-                            </span>
+                    <h1 className="font-heading font-bold text-5xl md:text-7xl text-primary-foreground mb-6">
+                        <div>{t('hero.title')}</div>
+                        <div className="text-secondary mt-4">
+                            {t('hero.titleHighlight')}
+                        </div>
                     </h1>
                     <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8">
                         {t('hero.subtitle')}
@@ -59,5 +59,5 @@ export const Hero = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};

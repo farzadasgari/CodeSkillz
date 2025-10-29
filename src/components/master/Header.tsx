@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -28,7 +28,7 @@ const Header = () => {
                         <img
                             src="CodeSkillz/csz/icon.webp"
                             alt="CodeSkillz icon"
-                            className="w-8 transition-transform group-hover:scale-125 duration-300"
+                            className="w-8 transition-transform group-hover:scale-110 duration-300"
                         />
                         <span className="text-2xl font-heading font-bold text-primary-foreground">
                             Code<span className="text-secondary">Skillz</span>
@@ -71,17 +71,17 @@ const Header = () => {
                         <div className="md:hidden">
                             <LanguageSwitcher />
                         </div>
-                    <button
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="md:hidden text-primary-foreground hover:text-secondary transition-colors"
-                        aria-label="Toggle menu"
-                    >
-                        {isMenuOpen ? (
-                            <X className="w-6 h-6" />
-                        ) : (
-                            <Menu className="w-6 h-6" />
-                        )}
-                    </button>
+                        <button
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className="md:hidden text-primary-foreground hover:text-secondary transition-colors"
+                            aria-label="Toggle menu"
+                        >
+                            {isMenuOpen ? (
+                                <X className="w-6 h-6" />
+                            ) : (
+                                <Menu className="w-6 h-6" />
+                            )}
+                        </button>
                     </div>
                 </div>
                 {isMenuOpen && (
@@ -102,7 +102,6 @@ const Header = () => {
                                 </Link>
                             ))}
                             <div className="flex flex-col gap-2 mt-4">
-
                                 <Link to="/auth" className="w-full">
                                     <Button
                                         variant="secondary"
