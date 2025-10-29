@@ -674,6 +674,14 @@ body.font-persian {
   top: 5rem;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1117,6 +1125,10 @@ body.font-persian {
   padding-top: 1rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -1227,6 +1239,10 @@ body.font-persian {
 
 .text-secondary\/70 {
   color: hsl(var(--secondary) / 0.7);
+}
+
+.text-secondary\/50 {
+  color: hsl(var(--secondary) / 0.5);
 }
 
 .underline-offset-4 {
@@ -1584,6 +1600,14 @@ body.font-persian {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-secondary\/60 {
+    color: hsl(var(--secondary) / 0.6);
+  }
+
+  .md\:text-secondary\/70 {
+    color: hsl(var(--secondary) / 0.7);
   }
 }
 
