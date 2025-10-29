@@ -7,6 +7,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import Flag from './Flag';
 
 const LanguageSwitcher = () => {
     const { language, changeLanguage } = useLanguage();
@@ -41,7 +42,9 @@ const LanguageSwitcher = () => {
                                 : ''
                         }`}
                     >
-                        <span className="text-lg">{lang.flag}</span>
+                        <span className="text-lg inline-flex items-center align-middle">
+                            <Flag emoji={lang.flag} size={20} />
+                        </span>
                         <span>{lang.name}</span>
                     </DropdownMenuItem>
                 ))}
