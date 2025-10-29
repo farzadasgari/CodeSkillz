@@ -600,6 +600,10 @@ body {
   color: hsl(var(--foreground));
 }
 
+body.font-persian {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -871,6 +875,10 @@ body {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-persian {
+  font-family: Vazirmatn, sans-serif;
 }
 
 .text-5xl {

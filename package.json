@@ -42,7 +42,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "tail": "npx tailwindcss -i ./src/index.css -o ./src/App.css --watch"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
