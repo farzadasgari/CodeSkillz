@@ -26,7 +26,7 @@ const LanguageSwitcher = () => {
                     className="gap-2 text-primary-foreground hover:text-secondary hover:bg-primary/20 transition-colors"
                 >
                     <Globe className="h-4 w-4" />
-                    <span className="hidden sm:inline-flex items-center">
+                    <span className="inline-flex items-center">
                         <Flag
                             emoji={
                                 languages.find((l) => l.code === language)

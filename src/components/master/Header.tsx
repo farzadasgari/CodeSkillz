@@ -63,7 +63,10 @@ const Header = () => {
                             </Button>
                         </Link>
                     </div>
-
+                    <div className="flex items-center justify-center gap-5">
+                        <div className="md:hidden">
+                            <LanguageSwitcher />
+                        </div>
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="md:hidden text-primary-foreground hover:text-secondary transition-colors"
@@ -75,6 +78,7 @@ const Header = () => {
                             <Menu className="w-6 h-6" />
                         )}
                     </button>
+                    </div>
                 </div>
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 pb-4 border-t border-primary/20 pt-4 animate-fade-in">
@@ -94,7 +98,7 @@ const Header = () => {
                                 </Link>
                             ))}
                             <div className="flex flex-col gap-2 mt-4">
-                                <LanguageSwitcher />
+
                                 <Link to="/auth" className="w-full">
                                     <Button
                                         variant="secondary"
