@@ -729,6 +729,10 @@ body.font-persian {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -795,6 +799,10 @@ body.font-persian {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 
 .w-0 {
@@ -1558,6 +1566,14 @@ body.font-persian {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:min-h-\[90vh\] {
+    min-height: 90vh;
+  }
+
+  .md\:min-h-\[80vh\] {
+    min-height: 80vh;
   }
 
   .md\:text-2xl {

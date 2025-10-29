@@ -7,7 +7,7 @@ const Home = () => {
     const { t } = useTranslation('home');
     return (
         <div className="min-h-screen">
-            <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden pt-20">
+            <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center bg-gradient-hero overflow-hidden pt-32">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/CodeSkillz/images/coding.jpg"
@@ -18,11 +18,11 @@ const Home = () => {
                 </div>
 
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute top-20 left-10 text-secondary/70 text-6xl font-mono animate-pulse">
+                    <div className="absolute top-20 left-10 text-secondary/50 md:text-secondary/70 text-6xl font-mono animate-pulse">
                         &lt;/&gt;
                     </div>
-                    <div className="absolute bottom-40 right-20 text-secondary/60 text-8xl font-mono animate-pulse delay-500">
-                        &#123; &#125;
+                    <div className="absolute bottom-10 right-10 text-secondary/50 md:text-secondary/60 text-6xl font-mono animate-pulse delay-500">
+                        &#123;&#125;
                     </div>
                 </div>
 
