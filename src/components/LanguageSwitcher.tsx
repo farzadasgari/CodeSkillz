@@ -26,9 +26,12 @@ const LanguageSwitcher = () => {
                     className="gap-2 text-primary-foreground hover:text-secondary hover:bg-primary/20 transition-colors"
                 >
                     <Globe className="h-4 w-4" />
-                    <span className="hidden sm:inline">
-                        {languages.find((l) => l.code === language)?.flag}
-                    </span>
+                    <span className="hidden sm:inline-flex items-center">
+    <Flag
+        emoji={languages.find((l) => l.code === language)?.flag || '🇬🇧'}
+        size={20}
+    />
+  </span>
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-40">
