@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import {Clock, BarChart3, Euro} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Link } from 'react-router-dom';
+import { Clock, BarChart3, Euro } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 interface CourseCardProps {
     id: string;
@@ -9,32 +9,32 @@ interface CourseCardProps {
     description: string;
     image: string;
     duration: string;
-    level: "Beginner" | "Intermediate" | "Advanced";
+    level: 'Beginner' | 'Intermediate' | 'Advanced';
     price: number;
     featured?: boolean;
 }
 
 const CourseCard = ({
-                        id,
-                        title,
-                        description,
-                        image,
-                        duration,
-                        level,
-                        price,
-                        featured = false,
-                    }: CourseCardProps) => {
+    id,
+    title,
+    description,
+    image,
+    duration,
+    level,
+    price,
+    featured = false,
+}: CourseCardProps) => {
     const levelColors = {
-        Beginner: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
-        Intermediate: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20",
-        Advanced: "bg-secondary/10 text-secondary border-secondary/20",
+        Beginner: 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
+        Intermediate: 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20',
+        Advanced: 'bg-secondary/10 text-secondary border-secondary/20',
     };
 
     return (
         <div
             className={`group relative bg-card rounded-lg overflow-hidden transition-all duration-300 
                 hover:shadow-purple hover:-translate-y-2
-                ${featured ? "border-2 border-secondary shadow-crimson" : "border border-border"}
+                ${featured ? 'border-2 border-secondary shadow-crimson' : 'border border-border'}
                 h-full flex flex-col`}
         >
             {featured && (
@@ -75,9 +75,7 @@ const CourseCard = ({
                     <div className="flex items-center gap-1 font-semibold">
                         Price:
                         <Euro className="w-4 h-4 text-emerald-700" />
-                        <span>
-                            {price}
-                        </span>
+                        <span>{price}</span>
                     </div>
                 </div>
 
