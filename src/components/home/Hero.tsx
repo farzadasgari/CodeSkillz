@@ -74,36 +74,62 @@ export const Hero = () => {
                                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
                             </div>
-                            <span className="text-muted text-sm font-mono">codeskillz.py</span>
+                            <span className="text-muted text-sm font-mono">
+                                codeskillz.py
+                            </span>
                         </div>
-
-                        {/* Terminal Content */}
                         <div className="p-6 font-mono text-sm space-y-3 min-h-[300px]">
-                            <div className="text-secondary">$ python learn_with_farzad.py</div>
-                            <div className="text-primary-foreground/80">Initializing CodeSkillz environment...</div>
-                            <div className="text-green-400">✓ Python modules loaded</div>
-                            <div className="text-green-400">✓ Machine Learning libraries ready</div>
-                            <div className="text-green-400">✓ Web Development tools configured</div>
-                            <div className="text-secondary mt-4">&gt;&gt;&gt; print("Welcome to CodeSkillz!")</div>
-                            <div className="text-primary-foreground/90">Welcome to CodeSkillz!</div>
-                            <div className="text-secondary">&gt;&gt;&gt; next_class = get_live_session()</div>
-                            <div className="text-primary-foreground/90">📅 Next Live Class: "Python Advanced Concepts"</div>
-                            <div className="text-primary-foreground/90">🎓 Instructor: Farzad</div>
-                            <div className="text-primary-foreground/90">🕐 Starting soon</div>
-                            <div className="text-secondary animate-pulse">▊</div>
+                            <div className="text-secondary">
+                                $ python learn_with_farzad.py
+                            </div>
+                            <div className="text-primary-foreground/80">
+                                Initializing CodeSkillz environment...
+                            </div>
+                            <div className="text-green-400">
+                                ✓ Python modules loaded
+                            </div>
+                            <div className="text-green-400">
+                                ✓ Machine Learning libraries ready
+                            </div>
+                            <div className="text-green-400">
+                                ✓ Web Development tools configured
+                            </div>
+                            <div className="text-secondary mt-4">
+                                &gt;&gt;&gt; print("Welcome to CodeSkillz!")
+                            </div>
+                            <div className="text-primary-foreground/90">
+                                Welcome to CodeSkillz!
+                            </div>
+                            <div className="text-secondary">
+                                &gt;&gt;&gt; next_class = get_live_session()
+                            </div>
+                            <div className="text-primary-foreground/90">
+                                📅 Next Live Class: "Python Advanced Concepts"
+                            </div>
+                            <div className="text-primary-foreground/90">
+                                🎓 Instructor: Farzad
+                            </div>
+                            <div className="text-primary-foreground/90">
+                                🕐 Starting soon
+                            </div>
+                            <div className="text-secondary animate-pulse">
+                                ▊
+                            </div>
                         </div>
                     </div>
-
                     <div className="absolute -right-4 -top-4 bg-secondary rounded-lg p-4 shadow-lg border border-secondary/50 animate-float hidden lg:block">
                         <div className="text-center">
                             <div className="text-3xl mb-1">🏆</div>
-                            <div className="text-xs text-background font-semibold">Top Rated</div>
-                            <div className="text-xs text-background/70">By Students</div>
+                            <div className="text-xs text-background font-semibold">
+                                Top Rated
+                            </div>
+                            <div className="text-xs text-background/70">
+                                By Students
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
