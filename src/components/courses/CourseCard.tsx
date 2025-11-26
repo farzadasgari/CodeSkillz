@@ -44,7 +44,7 @@ const CourseCard = ({
             )}
 
             <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent z-10" />
                 <img
                     src={image}
                     alt={title}
