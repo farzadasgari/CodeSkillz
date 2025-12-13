@@ -198,7 +198,7 @@ const Home = () => {
                                 ))}
                             </CarouselContent>
                             <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
-                            <CarouselNext className="hidden md:flex rtl:rotate-180" />
+                            <CarouselNext className="hidden md:flex" />
                         </Carousel>
                     </div>
                     <div className="text-center mt-12">
@@ -209,7 +209,7 @@ const Home = () => {
                                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                             >
                                 {t('featured.viewAll')}
-                                <ArrowRight className="ms-2 rtl:rotate-180" />
+                                <ArrowRight className="ms-2" />
                             </Button>
                         </Link>
                     </div>
@@ -333,7 +333,7 @@ const Home = () => {
                                 ))}
                             </CarouselContent>
                             <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
-                            <CarouselNext className="hidden md:flex rtl:rotate-180" />
+                            <CarouselNext className="hidden md:flex" />
                         </Carousel>
                     </div>
                     <div className="text-center mt-12">
@@ -344,7 +344,7 @@ const Home = () => {
                                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                             >
                                 {t('blog.viewAll')}
-                                <ArrowRight className="ms-2 rtl:rotate-180" />
+                                <ArrowRight className="ms-2" />
                             </Button>
                         </Link>
                     </div>
