@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/button';
 import { Course } from '@/data/courses';
 import { cn } from '@/lib/utils';
 
-interface CourseCardProps extends Course {}
+type CourseCardProps = Course;
 
 const CourseCard = ({
     id,
@@ -29,12 +29,9 @@ const CourseCard = ({
     featured,
     format,
     enrolledCount,
-    totalSeats,
     nextLiveSession,
 }: CourseCardProps) => {
     const { t } = useTranslation(['courses', 'courseData']);
-
-    // Get translated content
     const translatedTitle = t(`courseData:${id}.title`, {
         defaultValue: title,
     });
@@ -69,8 +66,6 @@ const CourseCard = ({
 
     const formatInfo = formatConfig[format];
     const FormatIcon = formatInfo.icon;
-
-    // Calculate countdown for live sessions
     const getCountdown = () => {
         if (!nextLiveSession) return null;
         const now = new Date();
@@ -94,18 +89,13 @@ const CourseCard = ({
 
     return (
         <div className="group relative bg-card rounded-xl overflow-hidden border border-border hover:border-secondary/50 transition-all duration-300 hover:shadow-cyan hover:-translate-y-1">
-            {/* Image Container */}
             <div className="relative h-48 overflow-hidden">
                 <img
                     src={image}
                     alt={translatedTitle}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-
-                {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
-
-                {/* Format Badge - Top Left */}
                 <Badge
                     className={cn(
                         'absolute top-3 left-3 flex items-center gap-1.5 font-bold text-xs',
@@ -115,8 +105,6 @@ const CourseCard = ({
                     <FormatIcon className="w-3 h-3" />
                     {formatInfo.label}
                 </Badge>
-
-                {/* Price Badge - Top Right */}
                 <div className="absolute top-3 right-3">
                     {isFree ? (
                         <Badge className="bg-secondary text-secondary-foreground font-bold text-sm px-3 py-1">
@@ -133,22 +121,16 @@ const CourseCard = ({
                         </Badge>
                     )}
                 </div>
-
-                {/* Featured Badge */}
                 {featured && (
                     <Badge className="absolute bottom-3 left-3 bg-secondary text-secondary-foreground font-semibold">
                         {t('bestSeller')}
                     </Badge>
                 )}
-
-                {/* Play icon overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="w-16 h-16 rounded-full bg-secondary/90 flex items-center justify-center shadow-cyan">
                         <Play className="w-8 h-8 text-secondary-foreground fill-current ml-1" />
                     </div>
                 </div>
-
-                {/* Floating brackets on hover */}
                 <span className="absolute top-1/2 left-4 -translate-y-1/2 text-4xl font-mono text-secondary/0 group-hover:text-secondary/60 transition-all duration-300 -translate-x-4 group-hover:translate-x-0">
                     {'{'}
                 </span>
@@ -156,25 +138,16 @@ const CourseCard = ({
                     {'}'}
                 </span>
             </div>
-
-            {/* Content */}
             <div className="p-5 flex flex-col">
-                {/* Title */}
                 <h3 className="font-heading font-bold text-lg text-card-foreground mb-2 line-clamp-2 h-14 group-hover:text-secondary transition-colors">
                     {translatedTitle}
                 </h3>
-
-                {/* Instructor */}
                 <p className="text-secondary text-sm mb-2">
                     {t('card.withInstructor', { defaultValue: 'with Farzad' })}
                 </p>
-
-                {/* Description */}
                 <p className="text-muted-foreground text-sm mb-3 line-clamp-2 h-10">
                     {translatedDescription}
                 </p>
-
-                {/* Info Row */}
                 <div className="flex flex-wrap items-center gap-3 mb-3 text-xs">
                     {format === 'live' && countdown && (
                         <div className="flex items-center gap-1.5 text-secondary">
@@ -189,7 +162,6 @@ const CourseCard = ({
                             </span>
                         </div>
                     )}
-
                     {format === 'recorded' && (
                         <div className="flex items-center gap-1.5 text-muted-foreground">
                             <Play className="w-3.5 h-3.5" />
@@ -200,7 +172,6 @@ const CourseCard = ({
                             </span>
                         </div>
                     )}
-
                     <div className="flex items-center gap-1.5 text-muted-foreground">
                         <Clock className="w-3.5 h-3.5" />
                         <span>{duration}</span>
@@ -211,8 +182,6 @@ const CourseCard = ({
                         <span>{enrolledCount.toLocaleString()}</span>
                     </div>
                 </div>
-
-                {/* Level Badge */}
                 <div className="flex items-center mb-4">
                     <Badge
                         variant="outline"
@@ -224,8 +193,6 @@ const CourseCard = ({
                         })}
                     </Badge>
                 </div>
-
-                {/* CTA Button */}
                 <Link to={`/courses/${id}`}>
                     <Button
                         className={cn(
@@ -237,12 +204,12 @@ const CourseCard = ({
                     >
                         {isFree
                             ? t('card.startFree', {
-                                  defaultValue: 'Start Free',
-                              })
+                                defaultValue: 'Start Free',
+                            })
                             : t('card.enrollFor', {
-                                  price,
-                                  defaultValue: `Enroll for €${price}`,
-                              })}
+                                price,
+                                defaultValue: `Enroll for €${price}`,
+                            })}
                     </Button>
                 </Link>
             </div>

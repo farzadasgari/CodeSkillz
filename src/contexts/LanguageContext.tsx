@@ -35,31 +35,21 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     const [isRTL, setIsRTL] = useState(i18n.language === 'fa');
 
     useEffect(() => {
-        // Sync language state when i18n language changes
         const handleLanguageChange = (lng: string) => {
             setLanguage(lng);
             const rtlLanguages = ['fa', 'ar', 'he'];
             const currentIsRTL = rtlLanguages.includes(lng);
             setIsRTL(currentIsRTL);
-
-            // Update document direction and language
             document.documentElement.dir = currentIsRTL ? 'rtl' : 'ltr';
             document.documentElement.lang = lng;
-
-            // Update body class for font switching
             if (lng === 'fa') {
                 document.body.classList.add('font-persian');
             } else {
                 document.body.classList.remove('font-persian');
             }
         };
-
-        // Initial setup
         handleLanguageChange(i18n.language);
-
-        // Listen for language changes
         i18n.on('languageChanged', handleLanguageChange);
-
         return () => {
             i18n.off('languageChanged', handleLanguageChange);
         };

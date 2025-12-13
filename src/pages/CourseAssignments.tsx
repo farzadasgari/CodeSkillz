@@ -20,7 +20,6 @@ import {
     DialogHeader,
     DialogTitle,
 } from '@/components/ui/dialog';
-import { Textarea } from '@/components/ui/textarea';
 import {
     ChevronRight,
     FileText,
@@ -33,7 +32,6 @@ import {
     Award,
     Target,
     Zap,
-    Code,
     MessageSquare,
 } from 'lucide-react';
 import { courses } from '@/data/courses';
@@ -52,11 +50,32 @@ import {
     Radar,
 } from 'recharts';
 
+import type { ComponentProps } from 'react';
+import type { LucideIcon } from 'lucide-react';
+
+type BadgeVariant = ComponentProps<typeof Badge>['variant'];
+
+type AssignmentStatus = 'graded' | 'submitted' | 'open' | 'upcoming' | 'late';
+type AssignmentType = 'Practice' | 'Quiz' | 'Project' | 'Final Exam';
+
+type Assignment = {
+    id: number;
+    title: string;
+    type: AssignmentType;
+    dueDate: string;
+    status: AssignmentStatus;
+    grade?: number;
+    submitted?: string;
+    feedback?: string;
+    improvement?: string;
+    progress?: number;
+};
+
 const CourseAssignments = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t } = useTranslation();
-    const [selectedAssignment, setSelectedAssignment] = useState<any>(null);
+    const [selectedAssignment, setSelectedAssignment] = useState<Assignment | null>(null);
     const course = courses.find((c) => c.id === id);
 
     if (!course) {
@@ -85,7 +104,7 @@ const CourseAssignments = () => {
         { skill: 'Documentation', score: 87 },
     ];
 
-    const assignments = [
+    const assignments: Assignment[] = [
         {
             id: 1,
             title: 'Python Basics Challenge',
@@ -133,39 +152,18 @@ const CourseAssignments = () => {
         },
     ];
 
-    const getStatusBadge = (status: string) => {
-        const variants: Record<
-            string,
-            { variant: any; icon: any; text: string }
-        > = {
-            graded: {
-                variant: 'default',
-                icon: CheckCircle2,
-                text: t('dashboard:assignments.status.graded'),
-            },
-            submitted: {
-                variant: 'secondary',
-                icon: Clock,
-                text: t('dashboard:assignments.status.submitted'),
-            },
-            open: {
-                variant: 'outline',
-                icon: FileText,
-                text: t('dashboard:assignments.status.open'),
-            },
-            upcoming: {
-                variant: 'secondary',
-                icon: AlertCircle,
-                text: t('dashboard:assignments.status.upcoming'),
-            },
-            late: {
-                variant: 'destructive',
-                icon: AlertCircle,
-                text: t('dashboard:assignments.status.late'),
-            },
+    const getStatusBadge = (status: AssignmentStatus) => {
+        const variants: Record<AssignmentStatus, { variant: BadgeVariant; icon: LucideIcon; text: string }> = {
+            graded: { variant: 'default', icon: CheckCircle2, text: t('dashboard:assignments.status.graded') },
+            submitted: { variant: 'secondary', icon: Clock, text: t('dashboard:assignments.status.submitted') },
+            open: { variant: 'outline', icon: FileText, text: t('dashboard:assignments.status.open') },
+            upcoming: { variant: 'secondary', icon: AlertCircle, text: t('dashboard:assignments.status.upcoming') },
+            late: { variant: 'destructive', icon: AlertCircle, text: t('dashboard:assignments.status.late') },
         };
-        const config = variants[status] || variants.upcoming;
+
+        const config = variants[status] ?? variants.upcoming;
         const Icon = config.icon;
+
         return (
             <Badge variant={config.variant} className="flex items-center gap-1">
                 <Icon className="h-3 w-3" />
@@ -187,7 +185,6 @@ const CourseAssignments = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            {/* Breadcrumb */}
             <div className="bg-muted/30 border-b">
                 <div className="container mx-auto px-4 py-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground overflow-x-auto">
@@ -211,8 +208,6 @@ const CourseAssignments = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Hero Section */}
             <section className="bg-gradient-to-br from-primary via-primary/90 to-secondary/20 text-white py-12">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center space-y-6">
@@ -231,7 +226,6 @@ const CourseAssignments = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-cyan/30 max-w-2xl mx-auto overflow-x-auto">
                             <ResponsiveContainer width="100%" height={150}>
                                 <LineChart data={progressData}>
@@ -275,8 +269,6 @@ const CourseAssignments = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Main Content */}
             <div className="container mx-auto px-4 py-12">
                 <Tabs defaultValue="assignments" className="space-y-6">
                     <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
@@ -289,7 +281,6 @@ const CourseAssignments = () => {
                     </TabsList>
 
                     <TabsContent value="assignments" className="space-y-6">
-                        {/* Quick Stats */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <Card>
                                 <CardContent className="pt-6">
@@ -360,8 +351,6 @@ const CourseAssignments = () => {
                                 </CardContent>
                             </Card>
                         </div>
-
-                        {/* Assignment Cards */}
                         <div className="space-y-4">
                             {assignments.map((assignment) => (
                                 <Card
@@ -423,56 +412,56 @@ const CourseAssignments = () => {
                                             <div className="flex gap-2 flex-shrink-0">
                                                 {assignment.status ===
                                                     'graded' && (
-                                                    <Button
-                                                        variant="outline"
-                                                        onClick={() =>
-                                                            setSelectedAssignment(
-                                                                assignment
-                                                            )
-                                                        }
-                                                        className="w-full lg:w-auto"
-                                                    >
-                                                        {t(
-                                                            'dashboard:assignments.buttons.viewFeedback'
-                                                        )}
-                                                    </Button>
-                                                )}
+                                                        <Button
+                                                            variant="outline"
+                                                            onClick={() =>
+                                                                setSelectedAssignment(
+                                                                    assignment
+                                                                )
+                                                            }
+                                                            className="w-full lg:w-auto"
+                                                        >
+                                                            {t(
+                                                                'dashboard:assignments.buttons.viewFeedback'
+                                                            )}
+                                                        </Button>
+                                                    )}
                                                 {assignment.status ===
                                                     'submitted' && (
-                                                    <Button
-                                                        variant="outline"
-                                                        disabled
-                                                        className="w-full lg:w-auto"
-                                                    >
-                                                        {t(
-                                                            'dashboard:assignments.buttons.pendingReview'
-                                                        )}
-                                                    </Button>
-                                                )}
+                                                        <Button
+                                                            variant="outline"
+                                                            disabled
+                                                            className="w-full lg:w-auto"
+                                                        >
+                                                            {t(
+                                                                'dashboard:assignments.buttons.pendingReview'
+                                                            )}
+                                                        </Button>
+                                                    )}
                                                 {assignment.status ===
                                                     'open' && (
-                                                    <Button
-                                                        variant="secondary"
-                                                        className="shadow-cyan w-full lg:w-auto"
-                                                    >
-                                                        <Upload className="mr-2 h-4 w-4" />
-                                                        {t(
-                                                            'dashboard:assignments.buttons.submitWork'
-                                                        )}
-                                                    </Button>
-                                                )}
+                                                        <Button
+                                                            variant="secondary"
+                                                            className="shadow-cyan w-full lg:w-auto"
+                                                        >
+                                                            <Upload className="mr-2 h-4 w-4" />
+                                                            {t(
+                                                                'dashboard:assignments.buttons.submitWork'
+                                                            )}
+                                                        </Button>
+                                                    )}
                                                 {assignment.status ===
                                                     'upcoming' && (
-                                                    <Button
-                                                        variant="outline"
-                                                        disabled
-                                                        className="w-full lg:w-auto"
-                                                    >
-                                                        {t(
-                                                            'dashboard:assignments.buttons.notYetAvailable'
-                                                        )}
-                                                    </Button>
-                                                )}
+                                                        <Button
+                                                            variant="outline"
+                                                            disabled
+                                                            className="w-full lg:w-auto"
+                                                        >
+                                                            {t(
+                                                                'dashboard:assignments.buttons.notYetAvailable'
+                                                            )}
+                                                        </Button>
+                                                    )}
                                             </div>
                                         </div>
                                     </CardHeader>
@@ -509,7 +498,6 @@ const CourseAssignments = () => {
 
                     <TabsContent value="analytics" className="space-y-6">
                         <div className="grid lg:grid-cols-2 gap-6">
-                            {/* Progress Chart */}
                             <Card>
                                 <CardHeader>
                                     <CardTitle className="flex items-center gap-2">
@@ -562,8 +550,6 @@ const CourseAssignments = () => {
                                     </ResponsiveContainer>
                                 </CardContent>
                             </Card>
-
-                            {/* Skills Radar */}
                             <Card>
                                 <CardHeader>
                                     <CardTitle className="flex items-center gap-2">
@@ -602,8 +588,6 @@ const CourseAssignments = () => {
                                     </ResponsiveContainer>
                                 </CardContent>
                             </Card>
-
-                            {/* Achievements */}
                             <Card className="lg:col-span-2">
                                 <CardHeader>
                                     <CardTitle className="flex items-center gap-2">
@@ -657,8 +641,6 @@ const CourseAssignments = () => {
                                     </div>
                                 </CardContent>
                             </Card>
-
-                            {/* Quick Actions */}
                             <Card className="lg:col-span-2">
                                 <CardHeader>
                                     <CardTitle>
@@ -690,8 +672,6 @@ const CourseAssignments = () => {
                     </TabsContent>
                 </Tabs>
             </div>
-
-            {/* Feedback Dialog */}
             <Dialog
                 open={!!selectedAssignment}
                 onOpenChange={() => setSelectedAssignment(null)}

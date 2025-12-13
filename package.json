@@ -1,7 +1,7 @@
 {
   "name": "codeskillz",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "CodeSkillz: RESTARTED online coding platform with live classes, online courses, Django backend, React frontend—details soon!",
   "keywords": [
