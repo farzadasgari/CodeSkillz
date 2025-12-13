@@ -37,7 +37,7 @@ const About = () => {
                         <p className="text-muted-foreground leading-relaxed">
                             With years of experience as a{' '}
                             <span className="font-semibold text-primary">
-                                PhD Researcher
+                                Researcher
                             </span>{' '}
                             and dedicated teacher, I've helped hundreds of
                             students transform their coding skills. My journey

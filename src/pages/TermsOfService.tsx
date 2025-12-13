@@ -145,7 +145,7 @@ const TermsOfService = () => {
                                     <strong className="text-secondary">
                                         Farzad
                                     </strong>
-                                    , a PhD researcher and passionate educator
+                                    , a passionate educator
                                     dedicated to helping students master coding
                                     skills through hands-on learning and expert
                                     instruction.

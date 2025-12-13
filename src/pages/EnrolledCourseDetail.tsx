@@ -766,7 +766,7 @@ const EnrolledCourseDetail = () => {
                                             Farzad
                                         </p>
                                         <p className="text-sm text-muted-foreground">
-                                            PhD Researcher & Educator
+                                            Educator
                                         </p>
                                     </div>
                                 </div>

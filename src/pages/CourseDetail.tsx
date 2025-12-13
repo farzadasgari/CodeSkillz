@@ -6,14 +6,12 @@ import {
     CheckCircle,
     ArrowLeft,
     Users,
-    Calendar,
     Play,
     Video,
     Wifi,
     Shield,
     Award,
     MessageCircle,
-    ChevronDown,
     Mail,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -71,8 +69,6 @@ const CourseDetail = () => {
     if (!course) {
         return <Navigate to="/course-not-found" replace />;
     }
-
-    // Get translated course data
     const translatedTitle = t(`courseData:${course.id}.title`, {
         defaultValue: course.title,
     });
@@ -114,7 +110,6 @@ const CourseDetail = () => {
 
     const formatInfo = formatConfig[course.format];
     const FormatIcon = formatInfo.icon;
-
     const levelColors = {
         Beginner: 'bg-green-500/10 text-green-500 border-green-500/20',
         Intermediate: 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20',
@@ -153,9 +148,7 @@ const CourseDetail = () => {
 
     return (
         <div className="min-h-screen">
-            {/* Dynamic Hero Based on Course Type */}
             <section className="relative bg-gradient-hero pt-24 pb-32 overflow-hidden">
-                {/* Animated background */}
                 <div className="absolute inset-0 overflow-hidden">
                     {course.format === 'live' && (
                         <>
@@ -182,19 +175,16 @@ const CourseDetail = () => {
                 </div>
 
                 <div className="container mx-auto px-4 relative z-10">
-                    {/* Back Button */}
                     <Link
                         to="/courses"
                         className="inline-flex items-center text-primary-foreground/70 hover:text-primary-foreground mb-8 transition-colors"
                     >
-                        <ArrowLeft className="mr-2 w-4 h-4" />
+                        <ArrowLeft className="mr-2 w-4 h-4 rtl:rotate-180 rtl:ml-2 rtl: mr-0" />
                         {t('backToCourses')}
                     </Link>
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        {/* Left: Course Info */}
                         <div>
-                            {/* Format Badge */}
                             <Badge
                                 className={cn(
                                     'mb-4 text-sm px-4 py-1.5 font-bold',
@@ -204,8 +194,6 @@ const CourseDetail = () => {
                                 <FormatIcon className="w-4 h-4 mr-2" />
                                 {formatInfo.label}
                             </Badge>
-
-                            {/* Free Badge */}
                             {course.isFree && (
                                 <Badge className="mb-4 ml-2 bg-secondary text-secondary-foreground text-sm px-4 py-1.5 font-bold">
                                     100%{' '}
@@ -223,8 +211,6 @@ const CourseDetail = () => {
                             <p className="text-primary-foreground/60 mb-6">
                                 {formatInfo.description}
                             </p>
-
-                            {/* Live Countdown */}
                             {course.format === 'live' &&
                                 course.nextLiveSession && (
                                     <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 mb-6">
@@ -291,8 +277,6 @@ const CourseDetail = () => {
                                         )}
                                     </div>
                                 )}
-
-                            {/* Recorded Course Info */}
                             {course.format === 'recorded' && (
                                 <div className="flex flex-wrap gap-4 mb-6">
                                     <div className="flex items-center gap-2 text-primary-foreground/80">
@@ -316,7 +300,6 @@ const CourseDetail = () => {
                                 </div>
                             )}
 
-                            {/* Stats */}
                             <div className="flex flex-wrap gap-6">
                                 <div className="flex items-center gap-2 text-primary-foreground/80">
                                     <Clock className="w-5 h-5 text-secondary" />
@@ -346,8 +329,6 @@ const CourseDetail = () => {
                                 </Badge>
                             </div>
                         </div>
-
-                        {/* Right: Course Image */}
                         <div className="relative">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
@@ -360,7 +341,6 @@ const CourseDetail = () => {
                                         {t('bestSeller')}
                                     </Badge>
                                 )}
-                                {/* Play Button Overlay */}
                                 <div className="absolute inset-0 flex items-center justify-center bg-primary/20">
                                     <div className="w-20 h-20 rounded-full bg-secondary/90 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform shadow-cyan">
                                         <Play className="w-10 h-10 text-secondary-foreground fill-current ml-1" />
@@ -372,12 +352,9 @@ const CourseDetail = () => {
                 </div>
             </section>
 
-            {/* Main Content */}
             <div className="container mx-auto px-4 -mt-16 relative z-20">
                 <div className="grid lg:grid-cols-3 gap-8">
-                    {/* Left Content */}
                     <div className="lg:col-span-2 space-y-8">
-                        {/* Instructor Card */}
                         <div className="bg-card rounded-xl border border-border p-6 shadow-lg">
                             <h2 className="font-heading font-bold text-xl text-card-foreground mb-4">
                                 {t('detail.instructor', {
@@ -409,8 +386,6 @@ const CourseDetail = () => {
                                 </Button>
                             </div>
                         </div>
-
-                        {/* What You'll Learn */}
                         <div className="bg-card rounded-xl border border-border p-8 shadow-lg">
                             <h2 className="font-heading font-bold text-2xl text-card-foreground mb-6">
                                 {t('whatYouLearn')}
@@ -429,8 +404,6 @@ const CourseDetail = () => {
                                 ))}
                             </div>
                         </div>
-
-                        {/* About This Course */}
                         <div className="bg-card rounded-xl border border-border p-8 shadow-lg">
                             <h2 className="font-heading font-bold text-2xl text-card-foreground mb-4">
                                 {t('aboutThisCourse')}
@@ -439,8 +412,6 @@ const CourseDetail = () => {
                                 {translatedLongDescription}
                             </p>
                         </div>
-
-                        {/* Curriculum Preview */}
                         <div className="bg-card rounded-xl border border-border p-8 shadow-lg">
                             <h2 className="font-heading font-bold text-2xl text-card-foreground mb-6">
                                 {t('detail.curriculum', {
@@ -477,8 +448,6 @@ const CourseDetail = () => {
                                     ))}
                             </Accordion>
                         </div>
-
-                        {/* FAQ */}
                         <div className="bg-card rounded-xl border border-border p-8 shadow-lg">
                             <h2 className="font-heading font-bold text-2xl text-card-foreground mb-6">
                                 {t('detail.faq', {
@@ -506,11 +475,8 @@ const CourseDetail = () => {
                             </Accordion>
                         </div>
                     </div>
-
-                    {/* Sticky Sidebar */}
                     <div className="lg:col-span-1">
                         <div className="sticky top-24 bg-card rounded-xl border-2 border-primary shadow-purple p-6">
-                            {/* Price */}
                             <div className="text-center mb-6">
                                 {course.isFree ? (
                                     <div className="text-4xl font-heading font-bold text-secondary mb-2">
@@ -550,8 +516,6 @@ const CourseDetail = () => {
                                         : t('oneTimePayment')}
                                 </p>
                             </div>
-
-                            {/* CTA Buttons */}
                             <Button
                                 variant="secondary"
                                 size="lg"
@@ -563,7 +527,6 @@ const CourseDetail = () => {
                                       })
                                     : t('enrollNow')}
                             </Button>
-
                             <Button
                                 variant="outline"
                                 size="lg"
@@ -571,8 +534,6 @@ const CourseDetail = () => {
                             >
                                 {t('addToWishlist')}
                             </Button>
-
-                            {/* Course Details */}
                             <div className="mt-6 space-y-3 text-sm">
                                 <div className="flex justify-between py-2 border-b border-border">
                                     <span className="text-muted-foreground">
@@ -614,8 +575,6 @@ const CourseDetail = () => {
                                     </div>
                                 )}
                             </div>
-
-                            {/* Includes */}
                             <div className="mt-6 p-4 bg-muted rounded-lg">
                                 <h4 className="font-semibold text-foreground mb-3">
                                     {t('includes')}
@@ -655,8 +614,6 @@ const CourseDetail = () => {
                                     ))}
                                 </ul>
                             </div>
-
-                            {/* Secure Payment */}
                             <div className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground">
                                 <Shield className="w-4 h-4" />
                                 {t('detail.securePayment', {
@@ -667,8 +624,6 @@ const CourseDetail = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Bottom spacer */}
             <div className="h-20" />
         </div>
     );

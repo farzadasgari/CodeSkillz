@@ -85,7 +85,7 @@ const Auth = () => {
                             <ul className="space-y-4 mb-8">
                                 {[
                                     'Live classes via Google Meet',
-                                    'Learn from a PhD researcher',
+                                    'Learn from Pros',
                                     'Hands-on coding projects',
                                     'Access to exclusive community',
                                 ].map((benefit, i) => (
@@ -371,7 +371,7 @@ const Auth = () => {
                             <ul className="space-y-3">
                                 {[
                                     'Live classes via Google Meet',
-                                    'Learn from a PhD researcher',
+                                    'Learn from Pros',
                                     'Hands-on coding projects',
                                 ].map((benefit, i) => (
                                     <li

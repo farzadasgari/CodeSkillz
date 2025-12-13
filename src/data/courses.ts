@@ -57,7 +57,7 @@ export const courses: Course[] = [
         format: 'recorded',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 1247,
         totalVideoHours: 24,
@@ -91,7 +91,7 @@ export const courses: Course[] = [
         format: 'live',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 234,
         nextLiveSession: '2025-12-08T18:00:00',
@@ -128,7 +128,7 @@ export const courses: Course[] = [
         format: 'hybrid',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 456,
         nextLiveSession: '2025-12-10T19:00:00',
@@ -162,7 +162,7 @@ export const courses: Course[] = [
         format: 'recorded',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 892,
         totalVideoHours: 28,
@@ -194,7 +194,7 @@ export const courses: Course[] = [
         format: 'recorded',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 2156,
         totalVideoHours: 20,
@@ -227,7 +227,7 @@ export const courses: Course[] = [
         format: 'live',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 178,
         nextLiveSession: '2025-12-12T17:00:00',
@@ -263,7 +263,7 @@ export const courses: Course[] = [
         format: 'recorded',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 3421,
         totalVideoHours: 18,
@@ -294,7 +294,7 @@ export const courses: Course[] = [
         format: 'hybrid',
         instructor: {
             name: 'Farzad',
-            title: 'PhD Researcher & Mentor',
+            title: 'Mentor',
         },
         enrolledCount: 567,
         nextLiveSession: '2025-12-15T18:00:00',
