@@ -177,30 +177,30 @@ const Home = () => {
                             {t('featured.description')}
                         </p>
                     </div>
-
-                    <Carousel
-                        opts={{
-                            align: 'start',
-                            loop: true,
-                        }}
-                        className="w-full max-w-7xl mx-auto"
-                    >
-                        <CarouselContent className="items-stretch">
-                            {featuredCourses.map((course) => (
-                                <CarouselItem
-                                    key={course.id}
-                                    className="md:basis-1/2 lg:basis-1/4 flex"
-                                >
-                                    <div className="p-2 w-full">
-                                        <CourseCard {...course} />
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
-                        <CarouselNext className="hidden md:flex rtl:rotate-180" />
-                    </Carousel>
-
+                    <div dir="ltr">
+                        <Carousel
+                            opts={{
+                                align: 'start',
+                                loop: true,
+                            }}
+                            className="w-full max-w-7xl mx-auto"
+                        >
+                            <CarouselContent className="items-stretch">
+                                {featuredCourses.map((course) => (
+                                    <CarouselItem
+                                        key={course.id}
+                                        className="md:basis-1/2 lg:basis-1/4 flex"
+                                    >
+                                        <div className="p-2 w-full">
+                                            <CourseCard {...course} />
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
+                            <CarouselNext className="hidden md:flex rtl:rotate-180" />
+                        </Carousel>
+                    </div>
                     <div className="text-center mt-12">
                         <Link to="/courses">
                             <Button
@@ -312,30 +312,30 @@ const Home = () => {
                             {t('blog.description')}
                         </p>
                     </div>
-
-                    <Carousel
-                        opts={{
-                            align: 'start',
-                            loop: true,
-                        }}
-                        className="w-full max-w-7xl mx-auto"
-                    >
-                        <CarouselContent className="items-stretch">
-                            {latestPosts.map((post) => (
-                                <CarouselItem
-                                    key={post.id}
-                                    className="md:basis-1/2 lg:basis-1/4 flex"
-                                >
-                                    <div className="p-2 w-full">
-                                        <BlogCard post={post} />
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
-                        <CarouselNext className="hidden md:flex rtl:rotate-180" />
-                    </Carousel>
-
+                    <div dir="ltr">
+                        <Carousel
+                            opts={{
+                                align: 'start',
+                                loop: true,
+                            }}
+                            className="w-full max-w-7xl mx-auto"
+                        >
+                            <CarouselContent className="items-stretch">
+                                {latestPosts.map((post) => (
+                                    <CarouselItem
+                                        key={post.id}
+                                        className="md:basis-1/2 lg:basis-1/4 flex"
+                                    >
+                                        <div className="p-2 w-full">
+                                            <BlogCard post={post} />
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="hidden md:flex rtl:rotate-180" />
+                            <CarouselNext className="hidden md:flex rtl:rotate-180" />
+                        </Carousel>
+                    </div>
                     <div className="text-center mt-12">
                         <Link to="/blog">
                             <Button
