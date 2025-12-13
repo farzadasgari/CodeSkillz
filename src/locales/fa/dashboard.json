@@ -1,0 +1,137 @@
+{
+  "title": "دوره‌های من",
+  "description": "به دوره‌های ثبت‌نام شده دسترسی پیدا کنید و در کلاس‌های زنده شرکت کنید",
+  "menu": {
+    "courses": "دوره‌های من",
+    "classes": "کلاس‌های آینده",
+    "progress": "پیشرفت و تحلیل‌ها",
+    "payments": "پرداخت‌ها و صورتحساب",
+    "achievements": "دستاوردها",
+    "settings": "پروفایل و تنظیمات",
+    "support": "پشتیبانی"
+  },
+  "support": {
+    "title": "نیاز به کمک دارید؟",
+    "description": "با فرزاد تماس بگیرید یا پرسش‌های متداول را بررسی کنید",
+    "visitFaq": "مشاهده پرسش‌های متداول"
+  },
+  "course": {
+    "progress": "پیشرفت",
+    "nextClass": "کلاس بعدی",
+    "joinMeet": "ورود به گوگل میت",
+    "continueLearning": "ادامه یادگیری",
+    "completed": "تکمیل شده"
+  },
+  "enrolled": {
+    "badge": "ثبت‌نام شده",
+    "modulesDone": "ماژول‌های انجام شده",
+    "hoursLearned": "ساعات یادگیری",
+    "nextClass": "کلاس بعدی",
+    "currentGrade": "نمره فعلی",
+    "continueButton": "ادامه از جایی که متوقف شدید",
+    "compiling": "در حال کامپایل...",
+    "tabs": {
+      "overview": "نمای کلی",
+      "modules": "ماژول‌ها",
+      "classes": "کلاس‌های زنده",
+      "resources": "منابع",
+      "submissions": "تکالیف",
+      "discussion": "گفتگو"
+    },
+    "overview": {
+      "welcome": "خوش آمدید به",
+      "personalizedJourney": "سفر یادگیری شخصی شما از اینجا شروع می‌شود",
+      "recentAchievement": "دستاورد اخیر",
+      "completedModule": "شما دیروز ماژول ۳ را تکمیل کردید! 🎉"
+    },
+    "modules": {
+      "review": "مرور",
+      "resume": "ادامه",
+      "start": "شروع",
+      "completePrevious": "ماژول‌های قبلی را برای باز کردن تکمیل کنید"
+    },
+    "classes": {
+      "liveSoon": "به زودی زنده",
+      "startingIn": "شروع در",
+      "joinMeet": "ورود به گوگل میت"
+    },
+    "submissions": {
+      "title": "تکالیف شما",
+      "description": "تکالیف و نمرات خود را پیگیری کنید",
+      "graded": "نمره‌دهی شده",
+      "submitted": "ارسال شده",
+      "viewFeedback": "مشاهده بازخورد",
+      "pendingReview": "در انتظار بررسی",
+      "goToAll": "رفتن به همه تکالیف"
+    },
+    "discussion": {
+      "title": "گفتگوی دوره",
+      "description": "با دانشجویان دیگر و استاد خود ارتباط برقرار کنید",
+      "comingSoon": "انجمن گفتگو به زودی!",
+      "stayTuned": "منتظر به‌روزرسانی‌ها باشید. شما قادر خواهید بود:",
+      "askQuestions": "از فرزاد سوال بپرسید",
+      "shareCode": "قطعه کدها را به اشتراک بگذارید",
+      "connectPeers": "با دانشجویان دیگر ارتباط برقرار کنید"
+    },
+    "instructor": {
+      "title": "استاد شما",
+      "joinedStudents": "دانشجو ثبت‌نام کرده",
+      "message": "پیام به فرزاد"
+    }
+  },
+  "assignments": {
+    "title": "تکالیف و امتحانات",
+    "overallGrade": "نمره کلی",
+    "improvement": "شما {{percent}}% از اولین تحویل خود پیشرفت کرده‌اید!",
+    "tabs": {
+      "assignments": "تکالیف",
+      "analytics": "تحلیل‌ها"
+    },
+    "stats": {
+      "averageScore": "میانگین نمره",
+      "bestScore": "بهترین نمره",
+      "onTime": "به موقع",
+      "completed": "تکمیل شده"
+    },
+    "status": {
+      "graded": "نمره‌دهی شده",
+      "submitted": "ارسال شده",
+      "open": "باز",
+      "upcoming": "آینده",
+      "late": "دیرکرد"
+    },
+    "buttons": {
+      "viewFeedback": "مشاهده بازخورد",
+      "pendingReview": "در انتظار بررسی",
+      "submitWork": "ارسال کار",
+      "notYetAvailable": "هنوز در دسترس نیست"
+    },
+    "due": "مهلت",
+    "analytics": {
+      "scoreProgression": "روند نمرات",
+      "performanceOverTime": "عملکرد شما در طول زمان",
+      "skillsBreakdown": "تحلیل مهارت‌ها",
+      "strengthsAreas": "نقاط قوت شما در زمینه‌های مختلف",
+      "recentAchievements": "دستاوردهای اخیر",
+      "perfectScore": "نمره کامل",
+      "achievedPerfect": "۱۰۰٪ در کوئیز ۱ کسب کردید",
+      "speedCoder": "کدنویس سریع",
+      "completedRecord": "در زمان رکورد تکمیل شد",
+      "risingStar": "ستاره در حال ظهور",
+      "percentImprovement": "۲۸٪ پیشرفت"
+    },
+    "quickActions": "اقدامات سریع",
+    "downloadGrades": "دانلود نمرات",
+    "viewCertificate": "مشاهده گواهینامه",
+    "askFarzad": "سوال از فرزاد",
+    "feedback": {
+      "title": "بازخورد از فرزاد",
+      "grade": "نمره",
+      "teacherFeedback": "بازخورد استاد"
+    }
+  },
+  "breadcrumb": {
+    "dashboard": "داشبورد",
+    "assignments": "تکالیف"
+  }
+}

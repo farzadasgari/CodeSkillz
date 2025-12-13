@@ -1,0 +1,58 @@
+{
+  "python-fundamentals": {
+    "title": "Python Fundamentals",
+    "description": "Master Python from basics to advanced concepts with hands-on projects.",
+    "longDescription": "Dive deep into Python programming with this comprehensive course. You'll learn everything from basic syntax and data structures to advanced topics like decorators, generators, and asynchronous programming. Perfect for beginners and those looking to solidify their Python knowledge.",
+    "category": "Python"
+  },
+  "machine-learning-mastery": {
+    "title": "Machine Learning Mastery",
+    "description": "Learn ML algorithms, neural networks, and deep learning with projects.",
+    "longDescription": "Explore the fascinating world of machine learning and artificial intelligence. This course covers supervised and unsupervised learning, neural networks, deep learning frameworks, and practical ML projects. You'll gain hands-on experience with TensorFlow, scikit-learn, and real-world datasets.",
+    "category": "Machine Learning"
+  },
+  "web-development-pro": {
+    "title": "Web Development Pro",
+    "description": "Build modern, responsive web apps with HTML, CSS, JS and React.",
+    "longDescription": "Become a proficient web developer by mastering HTML, CSS, JavaScript, and modern frameworks like React. You'll learn responsive design, API integration, state management, and best practices for building scalable web applications.",
+    "category": "Web Development"
+  },
+  "data-science-bootcamp": {
+    "title": "Data Science Bootcamp",
+    "description": "Complete data science journey from statistics to visualization.",
+    "longDescription": "A comprehensive bootcamp covering statistics, data analysis, pandas, numpy, and data visualization with matplotlib and seaborn. Learn to extract insights from real-world datasets and build your data science portfolio.",
+    "category": "Data Science"
+  },
+  "algorithms-dsa": {
+    "title": "Algorithms & DSA",
+    "description": "Master data structures and algorithms for coding interviews.",
+    "longDescription": "Prepare for technical interviews with this in-depth course on data structures and algorithms. Cover arrays, linked lists, trees, graphs, sorting, searching, and dynamic programming with hundreds of practice problems.",
+    "category": "DSA"
+  },
+  "deep-learning-ai": {
+    "title": "Deep Learning & AI",
+    "description": "Build neural networks and AI systems from scratch.",
+    "longDescription": "Advanced deep learning course covering CNNs, RNNs, transformers, and generative AI. Build real projects including image classifiers, chatbots, and recommendation systems using PyTorch and TensorFlow.",
+    "category": "Machine Learning"
+  },
+  "javascript-essentials": {
+    "title": "JavaScript Essentials",
+    "description": "Learn modern JavaScript from zero to hero.",
+    "longDescription": "Complete JavaScript course covering ES6+, async programming, DOM manipulation, and modern tooling. Perfect foundation for React, Node.js, or any JavaScript framework.",
+    "category": "Web Development"
+  },
+  "react-masterclass": {
+    "title": "React Masterclass",
+    "description": "Advanced React patterns, hooks, and state management.",
+    "longDescription": "Deep dive into React ecosystem including advanced hooks, context, Redux Toolkit, React Query, and testing. Build production-ready applications with best practices.",
+    "category": "Web Development"
+  },
+  "categories": {
+    "all": "All",
+    "python": "Python",
+    "machineLearning": "Machine Learning",
+    "webDevelopment": "Web Development",
+    "dataScience": "Data Science",
+    "dsa": "DSA"
+  }
+}

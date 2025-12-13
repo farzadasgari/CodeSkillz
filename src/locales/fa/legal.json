@@ -1,0 +1,33 @@
+{
+  "privacyPolicy": {
+    "title": "سیاست حریم خصوصی",
+    "subtitle": "داده‌های شما با ما امن هستند. بیاموزید که چگونه از اطلاعات شما محافظت می‌کنیم.",
+    "lastUpdated": "آخرین به‌روزرسانی: ۲۳ اکتبر ۲۰۲۵",
+    "contactButton": "تماس با ما در مورد حریم خصوصی",
+    "sections": {
+      "introduction": "مقدمه",
+      "dataCollection": "داده‌هایی که جمع‌آوری می‌کنیم",
+      "dataUsage": "نحوه استفاده از داده‌ها",
+      "dataSharing": "اشتراک‌گذاری داده‌ها",
+      "dataSecurity": "امنیت داده‌ها",
+      "yourRights": "حقوق شما",
+      "contactUs": "تماس با ما"
+    }
+  },
+  "termsOfService": {
+    "title": "شرایط استفاده",
+    "subtitle": "قوانین استفاده از کداسکیلز و پیوستن به دوره‌های ما را بفهمید",
+    "lastUpdated": "آخرین به‌روزرسانی: ۲۳ اکتبر ۲۰۲۵",
+    "contactButton": "تماس با ما در مورد شرایط",
+    "sections": {
+      "introduction": "مقدمه",
+      "userResponsibilities": "مسئولیت‌های کاربر",
+      "courseAccess": "دسترسی به دوره",
+      "payments": "پرداخت‌ها و بازپرداخت",
+      "refunds": "سیاست بازپرداخت",
+      "userConduct": "رفتار کاربر",
+      "termination": "خاتمه",
+      "contactUs": "تماس با ما"
+    }
+  }
+}

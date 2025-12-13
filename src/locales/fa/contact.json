@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "در",
+    "titleHighlight": "تماس باشید"
+  },
+  "form": {
+    "title": "پیامی برای ما ارسال کنید",
+    "name": "نام",
+    "namePlaceholder": "نام کامل شما",
+    "email": "ایمیل",
+    "emailPlaceholder": "your.email@example.com",
+    "subject": "موضوع",
+    "subjectPlaceholder": "در مورد چیست؟",
+    "message": "پیام",
+    "messagePlaceholder": "به ما بگویید چگونه می‌توانیم به شما کمک کنیم...",
+    "submit": "ارسال پیام",
+    "sending": "در حال ارسال...",
+    "success": "پیام با موفقیت ارسال شد! به زودی با شما تماس می‌گیریم."
+  },
+  "info": {
+    "title": "اطلاعات تماس",
+    "email": {
+      "title": "ایمیل",
+      "value": "khufarzadasgari@gmail.com"
+    },
+    "response": {
+      "title": "زمان پاسخگویی",
+      "value": "ظرف ۲۴ ساعت"
+    },
+    "hours": {
+      "title": "ساعات دسترسی",
+      "value": "۹ صبح - ۶ عصر (GMT)"
+    }
+  },
+  "faq": {
+    "title": "سوالات سریع؟",
+    "description": "صفحه پرسش‌های متداول ما را برای پاسخ‌های فوری به سوالات رایج بررسی کنید",
+    "button": "مشاهده پرسش‌های متداول"
+  }
+}

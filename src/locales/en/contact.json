@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Get in",
+    "titleHighlight": "Touch"
+  },
+  "form": {
+    "title": "Send us a message",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "What is this about?",
+    "message": "Message",
+    "messagePlaceholder": "Tell us how we can help you...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you soon."
+  },
+  "info": {
+    "title": "Contact Information",
+    "email": {
+      "title": "Email",
+      "value": "khufarzadasgari@gmail.com"
+    },
+    "response": {
+      "title": "Response Time",
+      "value": "Within 24 hours"
+    },
+    "hours": {
+      "title": "Available Hours",
+      "value": "9 AM - 6 PM (GMT)"
+    }
+  },
+  "faq": {
+    "title": "Quick Questions?",
+    "description": "Check out our FAQ page for instant answers to common questions",
+    "button": "Visit FAQ"
+  }
+}

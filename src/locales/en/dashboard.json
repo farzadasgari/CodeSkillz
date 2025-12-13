@@ -1,0 +1,137 @@
+{
+  "title": "My Courses",
+  "description": "Access your enrolled courses and join live classes",
+  "menu": {
+    "courses": "My Courses",
+    "classes": "Upcoming Classes",
+    "progress": "Progress & Analytics",
+    "payments": "Payments & Billing",
+    "achievements": "Achievements",
+    "settings": "Profile & Settings",
+    "support": "Support"
+  },
+  "support": {
+    "title": "Need Help?",
+    "description": "Contact Farzad or check our FAQ",
+    "visitFaq": "Visit FAQ"
+  },
+  "course": {
+    "progress": "Progress",
+    "nextClass": "Next class",
+    "joinMeet": "Join Google Meet",
+    "continueLearning": "Continue Learning",
+    "completed": "Completed"
+  },
+  "enrolled": {
+    "badge": "Enrolled",
+    "modulesDone": "Modules Done",
+    "hoursLearned": "Hours Learned",
+    "nextClass": "Next Class",
+    "currentGrade": "Current Grade",
+    "continueButton": "Continue Where You Left Off",
+    "compiling": "Compiling...",
+    "tabs": {
+      "overview": "Overview",
+      "modules": "Modules",
+      "classes": "Live Classes",
+      "resources": "Resources",
+      "submissions": "Submissions",
+      "discussion": "Discussion"
+    },
+    "overview": {
+      "welcome": "Welcome to",
+      "personalizedJourney": "Your personalized learning journey starts here",
+      "recentAchievement": "Recent Achievement",
+      "completedModule": "You completed Module 3 yesterday! 🎉"
+    },
+    "modules": {
+      "review": "Review",
+      "resume": "Resume",
+      "start": "Start",
+      "completePrevious": "Complete previous modules to unlock"
+    },
+    "classes": {
+      "liveSoon": "LIVE SOON",
+      "startingIn": "Starting in",
+      "joinMeet": "Join Google Meet"
+    },
+    "submissions": {
+      "title": "Your Submissions",
+      "description": "Track your assignments and grades",
+      "graded": "Graded",
+      "submitted": "Submitted",
+      "viewFeedback": "View Feedback",
+      "pendingReview": "Pending Review",
+      "goToAll": "Go to All Assignments"
+    },
+    "discussion": {
+      "title": "Course Discussion",
+      "description": "Connect with fellow students and your instructor",
+      "comingSoon": "Discussion forum coming soon!",
+      "stayTuned": "Stay tuned for updates. You'll be able to:",
+      "askQuestions": "Ask questions to Farzad",
+      "shareCode": "Share code snippets",
+      "connectPeers": "Connect with other students"
+    },
+    "instructor": {
+      "title": "Your Instructor",
+      "joinedStudents": "students enrolled",
+      "message": "Message Farzad"
+    }
+  },
+  "assignments": {
+    "title": "Assignments & Exams",
+    "overallGrade": "Overall Grade",
+    "improvement": "You've improved {{percent}}% since your first submission!",
+    "tabs": {
+      "assignments": "Assignments",
+      "analytics": "Analytics"
+    },
+    "stats": {
+      "averageScore": "Average Score",
+      "bestScore": "Best Score",
+      "onTime": "On Time",
+      "completed": "Completed"
+    },
+    "status": {
+      "graded": "Graded",
+      "submitted": "Submitted",
+      "open": "Open",
+      "upcoming": "Upcoming",
+      "late": "Late"
+    },
+    "buttons": {
+      "viewFeedback": "View Feedback",
+      "pendingReview": "Pending Review",
+      "submitWork": "Submit Work",
+      "notYetAvailable": "Not Yet Available"
+    },
+    "due": "Due",
+    "analytics": {
+      "scoreProgression": "Score Progression",
+      "performanceOverTime": "Your performance over time",
+      "skillsBreakdown": "Skills Breakdown",
+      "strengthsAreas": "Your strengths across different areas",
+      "recentAchievements": "Recent Achievements",
+      "perfectScore": "Perfect Score",
+      "achievedPerfect": "Achieved 100% on Quiz 1",
+      "speedCoder": "Speed Coder",
+      "completedRecord": "Completed in record time",
+      "risingStar": "Rising Star",
+      "percentImprovement": "28% improvement"
+    },
+    "quickActions": "Quick Actions",
+    "downloadGrades": "Download Grades",
+    "viewCertificate": "View Certificate",
+    "askFarzad": "Ask Farzad",
+    "feedback": {
+      "title": "Feedback from Farzad",
+      "grade": "Grade",
+      "teacherFeedback": "Teacher Feedback"
+    }
+  },
+  "breadcrumb": {
+    "dashboard": "Dashboard",
+    "assignments": "Assignments"
+  }
+}

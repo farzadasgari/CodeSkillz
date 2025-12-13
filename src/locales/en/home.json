@@ -2,8 +2,106 @@
   "hero": {
     "title": "Master Coding with",
     "titleHighlight": "CodeSkillz",
-    "subtitle": "Code like a Pro",
+    "subtitle": "Learn from a Researcher, Code like a Pro",
+    "description": "Learn from a passionate researcher and teacher. Join live Google Meet classes and master Python, Machine Learning, Web Development, and more.",
     "browseCourses": "Browse Courses",
-    "watchIntro": "Watch Intro"
+    "watchIntro": "Watch Intro",
+    "stats": {
+      "students": "Students",
+      "courses": "Courses",
+      "liveClasses": "Live Classes"
+    },
+    "slides": {
+      "course": {
+        "title": "Python Masterclass",
+        "button": "Enroll Now"
+      },
+      "instructor": {
+        "title": "Learn from a Researcher",
+        "button": "About Farzad"
+      },
+      "community": {
+        "title": "Join 500+ Coders",
+        "button": "Read Stories"
+      },
+      "live": {
+        "title": "Live Classes Anywhere",
+        "button": "Learn How"
+      }
+    }
+  },
+  "featured": {
+    "title": "Featured",
+    "titleHighlight": "Courses",
+    "description": "Explore our most popular courses designed to take you from beginner to professional",
+    "viewAll": "View All Courses",
+    "joinMeet": "Join Google Meet",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Why Choose",
+    "titleHighlight": "CodeSkillz?",
+    "subtitle": "Learn coding the smart way with live classes and expert guidance",
+    "curriculum": {
+      "title": "Comprehensive Curriculum",
+      "description": "From basics to advanced topics, our courses cover everything you need to become a professional developer"
+    },
+    "liveClasses": {
+      "title": "Live Classes",
+      "description": "Join interactive Google Meet sessions with real-time Q&A and hands-on coding practice"
+    },
+    "expert": {
+      "title": "Expert Instruction",
+      "description": "Learn from an experienced researcher and educator passionate about making coding accessible"
+    },
+    "projects": {
+      "title": "Hands-On Projects",
+      "description": "Build real-world applications and strengthen your portfolio with practical coding projects"
+    },
+    "startLearning": "Start Learning"
+  },
+  "testimonials": {
+    "title": "What Our",
+    "titleHighlight": "Students Say",
+    "subtitle": "Hear from coders who leveled up with CodeSkillz",
+    "joinNow": "Join Now",
+    "reviews": [
+      {
+        "name": "Sarah Johnson",
+        "course": "Python Masterclass",
+        "quote": "Farzad's teaching style is exceptional! I went from zero coding knowledge to building my own projects in just 3 months.",
+        "rating": 5
+      },
+      {
+        "name": "Ahmad Rezaei",
+        "course": "Machine Learning Mastery",
+        "quote": "The live Google Meet classes are incredibly valuable. Being able to ask questions in real-time made all the difference.",
+        "rating": 5
+      },
+      {
+        "name": "Emily Chen",
+        "course": "Web Development Pro",
+        "quote": "Best investment in my career! The hands-on projects and Farzad's guidance helped me land a developer job.",
+        "rating": 5
+      },
+      {
+        "name": "Michael Brown",
+        "course": "Python Fundamentals",
+        "quote": "As a researcher myself, I appreciate Farzad's depth of knowledge and ability to explain complex concepts simply.",
+        "rating": 5
+      }
+    ]
+  },
+  "blog": {
+    "title": "Latest",
+    "titleHighlight": "Blog Posts",
+    "description": "Stay updated with coding tips, tutorials, and industry insights",
+    "viewAll": "View All Posts"
+  },
+  "cta": {
+    "title": "Ready to Start Your",
+    "titleHighlight": "Coding Journey?",
+    "description": "Join thousands of students learning to code with expert instruction and live classes",
+    "getStarted": "Get Started Today"
   }
 }

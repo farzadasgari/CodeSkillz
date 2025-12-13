@@ -17,6 +17,12 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         heading: ['Poppins', 'system-ui', 'sans-serif'],
         persian: ['Vazirmatn', 'sans-serif'],
+        emoji: [
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",

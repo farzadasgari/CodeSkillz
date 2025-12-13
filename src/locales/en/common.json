@@ -1,0 +1,51 @@
+{
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Log Out"
+  },
+  "footer": {
+    "tagline": "Code like a Pro",
+    "description": "Learn coding from a passionate researcher and teacher. Join CodeSkillz for comprehensive courses in Python, Machine Learning, Web Development, and more.",
+    "quickLinks": "Quick Links",
+    "courses": "Courses",
+    "about": "About",
+    "blog": "Blog",
+    "community": "Community",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "tutorials": "Tutorials",
+    "support": "Support Center",
+    "copyright": "© {{year}} CodeSkillz. All Rights Reserved.",
+    "madeWith": "Made with",
+    "by": "by",
+    "socialAria": {
+      "twitter": "Follow us on Twitter",
+      "linkedin": "Connect on LinkedIn",
+      "github": "View our GitHub",
+      "email": "Send us an email"
+    }
+  },
+  "newsletter": {
+    "title": "Never Miss a Class or Tip!",
+    "description": "Get updates on Google Meet classes, payment options, and coding tutorials",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": "Successfully subscribed to newsletter!",
+    "gift": "Sign up for a free Python cheat sheet! 🎁"
+  }
+}

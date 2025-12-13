@@ -1,0 +1,33 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your data is safe with us. Learn how we protect your information.",
+    "lastUpdated": "Last Updated: October 23, 2025",
+    "contactButton": "Contact Us About Privacy",
+    "sections": {
+      "introduction": "Introduction",
+      "dataCollection": "Data We Collect",
+      "dataUsage": "How We Use Data",
+      "dataSharing": "Data Sharing",
+      "dataSecurity": "Data Security",
+      "yourRights": "Your Rights",
+      "contactUs": "Contact Us"
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "subtitle": "Understand the rules for using CodeSkillz and joining our courses",
+    "lastUpdated": "Last Updated: October 23, 2025",
+    "contactButton": "Contact Us About Terms",
+    "sections": {
+      "introduction": "Introduction",
+      "userResponsibilities": "User Responsibilities",
+      "courseAccess": "Course Access",
+      "payments": "Payments & Refunds",
+      "refunds": "Refund Policy",
+      "userConduct": "User Conduct",
+      "termination": "Termination",
+      "contactUs": "Contact Us"
+    }
+  }
+}

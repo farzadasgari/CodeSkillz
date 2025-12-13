@@ -1,0 +1,40 @@
+{
+  "how-to-join-google-meet": {
+    "title": "How to Join Your Google Meet Class",
+    "excerpt": "Step-by-step guide to accessing your live coding classes through Google Meet. Learn how to find your meeting links and troubleshoot common issues.",
+    "category": "Class Updates"
+  },
+  "accepted-payment-methods": {
+    "title": "Accepted Payment Methods for CodeSkillz Courses",
+    "excerpt": "Learn about all the payment options available for enrolling in our courses, including Stripe, PayPal, and credit cards.",
+    "category": "Payment Info"
+  },
+  "python-best-practices": {
+    "title": "10 Python Best Practices Every Developer Should Know",
+    "excerpt": "Master these essential Python coding standards and practices to write cleaner, more maintainable code.",
+    "category": "Coding Tutorials"
+  },
+  "machine-learning-fundamentals": {
+    "title": "Introduction to Machine Learning: A Beginner's Guide",
+    "excerpt": "Understand the core concepts of machine learning and how to get started with your first ML project.",
+    "category": "Research Insights"
+  },
+  "web-development-roadmap": {
+    "title": "Complete Web Development Roadmap for 2025",
+    "excerpt": "Navigate your journey from beginner to professional web developer with this comprehensive roadmap.",
+    "category": "Coding Tutorials"
+  },
+  "new-course-announcement": {
+    "title": "New Advanced Python Course Launching Next Month!",
+    "excerpt": "Excited to announce our new Advanced Python course covering async programming, decorators, and metaclasses.",
+    "category": "Announcements"
+  },
+  "categories": {
+    "all": "All",
+    "classUpdates": "Class Updates",
+    "paymentInfo": "Payment Info",
+    "codingTutorials": "Coding Tutorials",
+    "researchInsights": "Research Insights",
+    "announcements": "Announcements"
+  }
+}

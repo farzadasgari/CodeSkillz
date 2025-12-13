@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "About",
+    "titleHighlight": "CodeSkillz"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "At CodeSkillz, we believe coding education should be accessible, engaging, and effective. Our mission is to empower aspiring developers with the knowledge and skills needed to succeed in the tech industry through live, interactive instruction."
+  },
+  "instructor": {
+    "title": "Meet Your Instructor",
+    "name": "Farzad",
+    "role": "Researcher & Educator",
+    "bio": "With years of experience in both research and teaching, I'm passionate about making complex coding concepts accessible to everyone. My background in computer science research informs my teaching approach, ensuring you learn not just how to code, but how to think like a developer.",
+    "expertise": "Expertise",
+    "expertiseList": [
+      "Python Programming & Data Structures",
+      "Machine Learning & AI",
+      "Web Development (Frontend & Backend)",
+      "Algorithm Design & Problem Solving"
+    ]
+  },
+  "approach": {
+    "title": "Our Approach",
+    "liveClasses": {
+      "title": "Live Interactive Classes",
+      "description": "All classes are conducted via Google Meet, allowing for real-time interaction and immediate feedback"
+    },
+    "handson": {
+      "title": "Hands-On Learning",
+      "description": "Every concept is reinforced with practical coding exercises and real-world projects"
+    },
+    "support": {
+      "title": "Continuous Support",
+      "description": "Get help when you need it through our community channels and office hours"
+    },
+    "flexible": {
+      "title": "Flexible Payment",
+      "description": "Multiple payment options including Stripe and direct payments to make learning accessible"
+    }
+  },
+  "values": {
+    "title": "Our Values",
+    "quality": {
+      "title": "Quality Education",
+      "description": "We prioritize depth of understanding over breadth of topics"
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "Making coding education available to everyone, regardless of background"
+    },
+    "community": {
+      "title": "Community",
+      "description": "Building a supportive learning environment where students help each other grow"
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "Staying current with industry trends and best practices"
+    }
+  },
+  "cta": {
+    "title": "Ready to Learn?",
+    "description": "Join our community of learners and start your coding journey today",
+    "button": "Browse Courses"
+  }
+}

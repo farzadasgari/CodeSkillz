@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Find answers to common questions about our courses and platform"
+  },
+  "questions": [
+    {
+      "question": "How do live classes work?",
+      "answer": "All our classes are conducted via Google Meet. Once you enroll in a course, you'll receive a meeting link and schedule. Classes are interactive with live Q&A sessions."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept payments through Stripe (credit/debit cards) and also offer direct payment options. Contact us for more details on payment plans."
+    },
+    {
+      "question": "Can I access course materials after the class?",
+      "answer": "Yes! All registered students get lifetime access to course materials, recordings, and resources through their dashboard."
+    },
+    {
+      "question": "What if I miss a live class?",
+      "answer": "Don't worry! All live sessions are recorded and made available within 24 hours. You can watch them at your convenience."
+    },
+    {
+      "question": "Do I need prior coding experience?",
+      "answer": "It depends on the course. We offer courses for all levels - from complete beginners to advanced developers. Check the course requirements before enrolling."
+    },
+    {
+      "question": "Is there a refund policy?",
+      "answer": "Yes, we offer a 7-day money-back guarantee. If you're not satisfied with the course within the first week, contact us for a full refund."
+    },
+    {
+      "question": "How do I get support if I'm stuck?",
+      "answer": "You can ask questions during live classes, post in our community forum, or schedule office hours with the instructor."
+    },
+    {
+      "question": "Will I receive a certificate?",
+      "answer": "Yes! Upon successful completion of a course, you'll receive a certificate of completion that you can add to your portfolio or LinkedIn."
+    }
+  ],
+  "stillHaveQuestions": "Still have questions?",
+  "contactUs": "Contact us and we'll be happy to help!"
+}
