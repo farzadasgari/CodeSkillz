@@ -204,12 +204,12 @@ const CourseCard = ({
                     >
                         {isFree
                             ? t('card.startFree', {
-                                defaultValue: 'Start Free',
-                            })
+                                  defaultValue: 'Start Free',
+                              })
                             : t('card.enrollFor', {
-                                price,
-                                defaultValue: `Enroll for €${price}`,
-                            })}
+                                  price,
+                                  defaultValue: `Enroll for €${price}`,
+                              })}
                     </Button>
                 </Link>
             </div>

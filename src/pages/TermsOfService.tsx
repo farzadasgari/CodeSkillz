@@ -145,10 +145,9 @@ const TermsOfService = () => {
                                     <strong className="text-secondary">
                                         Farzad
                                     </strong>
-                                    , a passionate educator
-                                    dedicated to helping students master coding
-                                    skills through hands-on learning and expert
-                                    instruction.
+                                    , a passionate educator dedicated to helping
+                                    students master coding skills through
+                                    hands-on learning and expert instruction.
                                 </p>
                                 <p>
                                     Please read these Terms carefully. If you do

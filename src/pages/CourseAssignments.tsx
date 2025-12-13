@@ -75,7 +75,8 @@ const CourseAssignments = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t } = useTranslation();
-    const [selectedAssignment, setSelectedAssignment] = useState<Assignment | null>(null);
+    const [selectedAssignment, setSelectedAssignment] =
+        useState<Assignment | null>(null);
     const course = courses.find((c) => c.id === id);
 
     if (!course) {
@@ -153,12 +154,35 @@ const CourseAssignments = () => {
     ];
 
     const getStatusBadge = (status: AssignmentStatus) => {
-        const variants: Record<AssignmentStatus, { variant: BadgeVariant; icon: LucideIcon; text: string }> = {
-            graded: { variant: 'default', icon: CheckCircle2, text: t('dashboard:assignments.status.graded') },
-            submitted: { variant: 'secondary', icon: Clock, text: t('dashboard:assignments.status.submitted') },
-            open: { variant: 'outline', icon: FileText, text: t('dashboard:assignments.status.open') },
-            upcoming: { variant: 'secondary', icon: AlertCircle, text: t('dashboard:assignments.status.upcoming') },
-            late: { variant: 'destructive', icon: AlertCircle, text: t('dashboard:assignments.status.late') },
+        const variants: Record<
+            AssignmentStatus,
+            { variant: BadgeVariant; icon: LucideIcon; text: string }
+        > = {
+            graded: {
+                variant: 'default',
+                icon: CheckCircle2,
+                text: t('dashboard:assignments.status.graded'),
+            },
+            submitted: {
+                variant: 'secondary',
+                icon: Clock,
+                text: t('dashboard:assignments.status.submitted'),
+            },
+            open: {
+                variant: 'outline',
+                icon: FileText,
+                text: t('dashboard:assignments.status.open'),
+            },
+            upcoming: {
+                variant: 'secondary',
+                icon: AlertCircle,
+                text: t('dashboard:assignments.status.upcoming'),
+            },
+            late: {
+                variant: 'destructive',
+                icon: AlertCircle,
+                text: t('dashboard:assignments.status.late'),
+            },
         };
 
         const config = variants[status] ?? variants.upcoming;
@@ -412,56 +436,56 @@ const CourseAssignments = () => {
                                             <div className="flex gap-2 flex-shrink-0">
                                                 {assignment.status ===
                                                     'graded' && (
-                                                        <Button
-                                                            variant="outline"
-                                                            onClick={() =>
-                                                                setSelectedAssignment(
-                                                                    assignment
-                                                                )
-                                                            }
-                                                            className="w-full lg:w-auto"
-                                                        >
-                                                            {t(
-                                                                'dashboard:assignments.buttons.viewFeedback'
-                                                            )}
-                                                        </Button>
-                                                    )}
+                                                    <Button
+                                                        variant="outline"
+                                                        onClick={() =>
+                                                            setSelectedAssignment(
+                                                                assignment
+                                                            )
+                                                        }
+                                                        className="w-full lg:w-auto"
+                                                    >
+                                                        {t(
+                                                            'dashboard:assignments.buttons.viewFeedback'
+                                                        )}
+                                                    </Button>
+                                                )}
                                                 {assignment.status ===
                                                     'submitted' && (
-                                                        <Button
-                                                            variant="outline"
-                                                            disabled
-                                                            className="w-full lg:w-auto"
-                                                        >
-                                                            {t(
-                                                                'dashboard:assignments.buttons.pendingReview'
-                                                            )}
-                                                        </Button>
-                                                    )}
+                                                    <Button
+                                                        variant="outline"
+                                                        disabled
+                                                        className="w-full lg:w-auto"
+                                                    >
+                                                        {t(
+                                                            'dashboard:assignments.buttons.pendingReview'
+                                                        )}
+                                                    </Button>
+                                                )}
                                                 {assignment.status ===
                                                     'open' && (
-                                                        <Button
-                                                            variant="secondary"
-                                                            className="shadow-cyan w-full lg:w-auto"
-                                                        >
-                                                            <Upload className="mr-2 h-4 w-4" />
-                                                            {t(
-                                                                'dashboard:assignments.buttons.submitWork'
-                                                            )}
-                                                        </Button>
-                                                    )}
+                                                    <Button
+                                                        variant="secondary"
+                                                        className="shadow-cyan w-full lg:w-auto"
+                                                    >
+                                                        <Upload className="mr-2 h-4 w-4" />
+                                                        {t(
+                                                            'dashboard:assignments.buttons.submitWork'
+                                                        )}
+                                                    </Button>
+                                                )}
                                                 {assignment.status ===
                                                     'upcoming' && (
-                                                        <Button
-                                                            variant="outline"
-                                                            disabled
-                                                            className="w-full lg:w-auto"
-                                                        >
-                                                            {t(
-                                                                'dashboard:assignments.buttons.notYetAvailable'
-                                                            )}
-                                                        </Button>
-                                                    )}
+                                                    <Button
+                                                        variant="outline"
+                                                        disabled
+                                                        className="w-full lg:w-auto"
+                                                    >
+                                                        {t(
+                                                            'dashboard:assignments.buttons.notYetAvailable'
+                                                        )}
+                                                    </Button>
+                                                )}
                                             </div>
                                         </div>
                                     </CardHeader>

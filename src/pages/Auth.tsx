@@ -79,7 +79,9 @@ const Auth = () => {
                         <div className="bg-gradient-card p-8 rounded-lg shadow-purple">
                             <h2 className="text-3xl font-heading font-bold text-primary-foreground mb-6">
                                 Join the Code
-                                <span className="text-secondary">Skillz</span>{' '}
+                                <span className="text-secondary">
+                                    Skillz
+                                </span>{' '}
                                 Revolution
                             </h2>
                             <ul className="space-y-4 mb-8">
