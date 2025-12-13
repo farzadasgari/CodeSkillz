@@ -29,50 +29,49 @@ import dashboardEN from '@/locales/en/dashboard.json';
 import dashboardFA from '@/locales/fa/dashboard.json';
 
 const resources = {
-  en: {
-    common: commonEN,
-    home: homeEN,
-    courses: coursesEN,
-    courseData: courseDataEN,
-    blogData: blogDataEN,
-    about: aboutEN,
-    contact: contactEN,
-    blog: blogEN,
-    faq: faqEN,
-    legal: legalEN,
-    auth: authEN,
-    dashboard: dashboardEN,
-  },
-  fa: {
-    common: commonFA,
-    home: homeFA,
-    courses: coursesFA,
-    courseData: courseDataFA,
-    blogData: blogDataFA,
-    about: aboutFA,
-    contact: contactFA,
-    blog: blogFA,
-    faq: faqFA,
-    legal: legalFA,
-    auth: authFA,
-    dashboard: dashboardFA,
-  },
+    en: {
+        common: commonEN,
+        home: homeEN,
+        courses: coursesEN,
+        courseData: courseDataEN,
+        blogData: blogDataEN,
+        about: aboutEN,
+        contact: contactEN,
+        blog: blogEN,
+        faq: faqEN,
+        legal: legalEN,
+        auth: authEN,
+        dashboard: dashboardEN,
+    },
+    fa: {
+        common: commonFA,
+        home: homeFA,
+        courses: coursesFA,
+        courseData: courseDataFA,
+        blogData: blogDataFA,
+        about: aboutFA,
+        contact: contactFA,
+        blog: blogFA,
+        faq: faqFA,
+        legal: legalFA,
+        auth: authFA,
+        dashboard: dashboardFA,
+    },
 };
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources,
-    fallbackLng: 'en',
-    defaultNS: 'common',
-    interpolation: {
-      escapeValue: false,
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
-  });
+i18n.use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+        resources,
+        fallbackLng: 'en',
+        defaultNS: 'common',
+        interpolation: {
+            escapeValue: false,
+        },
+        detection: {
+            order: ['localStorage', 'navigator'],
+            caches: ['localStorage'],
+        },
+    });
 
 export default i18n;

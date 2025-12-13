@@ -1,26 +1,27 @@
-import pythonImage from "@/assets/course-python.jpg";
-import mlImage from "@/assets/course-ml.jpg";
-import webImage from "@/assets/course-web.jpg";
+import pythonImage from '@/assets/course-python.jpg';
+import mlImage from '@/assets/course-ml.jpg';
+import webImage from '@/assets/course-web.jpg';
 
 export interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  category: string;
-  tags: string[];
-  image: string;
-  date: string;
-  author: string;
-  featured?: boolean;
+    id: string;
+    title: string;
+    excerpt: string;
+    content: string;
+    category: string;
+    tags: string[];
+    image: string;
+    date: string;
+    author: string;
+    featured?: boolean;
 }
 
 export const blogPosts: BlogPost[] = [
-  {
-    id: "how-to-join-google-meet",
-    title: "How to Join Your Google Meet Class",
-    excerpt: "Step-by-step guide to accessing your live coding classes through Google Meet. Learn how to find your meeting links and troubleshoot common issues.",
-    content: `# Getting Started with Google Meet Classes
+    {
+        id: 'how-to-join-google-meet',
+        title: 'How to Join Your Google Meet Class',
+        excerpt:
+            'Step-by-step guide to accessing your live coding classes through Google Meet. Learn how to find your meeting links and troubleshoot common issues.',
+        content: `# Getting Started with Google Meet Classes
 
 After enrolling in a CodeSkillz course, you'll receive Google Meet links for all scheduled live classes. Here's everything you need to know:
 
@@ -48,18 +49,19 @@ After enrolling in a CodeSkillz course, you'll receive Google Meet links for all
 ## Troubleshooting
 
 If you can't find your meeting link, check your email or contact support at khufarzadasgari@gmail.com.`,
-    category: "Class Updates",
-    tags: ["Google Meet", "Classes", "Tutorial"],
-    image: pythonImage,
-    date: "2025-01-15",
-    author: "Farzad",
-    featured: true,
-  },
-  {
-    id: "accepted-payment-methods",
-    title: "Accepted Payment Methods for CodeSkillz Courses",
-    excerpt: "Learn about all the payment options available for enrolling in our courses, including Stripe, PayPal, and credit cards.",
-    content: `# Payment Options at CodeSkillz
+        category: 'Class Updates',
+        tags: ['Google Meet', 'Classes', 'Tutorial'],
+        image: pythonImage,
+        date: '2025-01-15',
+        author: 'Farzad',
+        featured: true,
+    },
+    {
+        id: 'accepted-payment-methods',
+        title: 'Accepted Payment Methods for CodeSkillz Courses',
+        excerpt:
+            'Learn about all the payment options available for enrolling in our courses, including Stripe, PayPal, and credit cards.',
+        content: `# Payment Options at CodeSkillz
 
 We offer flexible payment methods to make learning accessible to everyone.
 
@@ -85,17 +87,18 @@ All payments are processed through industry-standard encryption. We never store 
 ## Refund Policy
 
 30-day money-back guarantee if you're not satisfied with your course.`,
-    category: "Payment Info",
-    tags: ["Payment", "Stripe", "Enrollment"],
-    image: mlImage,
-    date: "2025-01-10",
-    author: "Farzad",
-  },
-  {
-    id: "python-best-practices",
-    title: "10 Python Best Practices Every Developer Should Know",
-    excerpt: "Master these essential Python coding standards and practices to write cleaner, more maintainable code.",
-    content: `# Python Best Practices
+        category: 'Payment Info',
+        tags: ['Payment', 'Stripe', 'Enrollment'],
+        image: mlImage,
+        date: '2025-01-10',
+        author: 'Farzad',
+    },
+    {
+        id: 'python-best-practices',
+        title: '10 Python Best Practices Every Developer Should Know',
+        excerpt:
+            'Master these essential Python coding standards and practices to write cleaner, more maintainable code.',
+        content: `# Python Best Practices
 
 ## 1. Follow PEP 8 Style Guide
 Use consistent naming conventions and formatting.
@@ -126,17 +129,18 @@ Properly manage resources with 'with' statements.
 
 ## 10. Optimize Imports
 Keep imports organized and remove unused ones.`,
-    category: "Coding Tutorials",
-    tags: ["Python", "Best Practices", "Tutorial"],
-    image: mlImage,
-    date: "2025-01-05",
-    author: "Farzad",
-  },
-  {
-    id: "machine-learning-fundamentals",
-    title: "Introduction to Machine Learning: A Beginner's Guide",
-    excerpt: "Understand the core concepts of machine learning and how to get started with your first ML project.",
-    content: `# Machine Learning Fundamentals
+        category: 'Coding Tutorials',
+        tags: ['Python', 'Best Practices', 'Tutorial'],
+        image: mlImage,
+        date: '2025-01-05',
+        author: 'Farzad',
+    },
+    {
+        id: 'machine-learning-fundamentals',
+        title: "Introduction to Machine Learning: A Beginner's Guide",
+        excerpt:
+            'Understand the core concepts of machine learning and how to get started with your first ML project.',
+        content: `# Machine Learning Fundamentals
 
 ## What is Machine Learning?
 
@@ -164,17 +168,18 @@ Learn through trial and error with rewards.
 ## Resources
 
 Enroll in our Machine Learning course to dive deeper into these concepts with hands-on projects.`,
-    category: "Research Insights",
-    tags: ["Machine Learning", "AI", "Tutorial"],
-    image: webImage,
-    date: "2024-12-28",
-    author: "Farzad",
-  },
-  {
-    id: "web-development-roadmap",
-    title: "Complete Web Development Roadmap for 2025",
-    excerpt: "Navigate your journey from beginner to professional web developer with this comprehensive roadmap.",
-    content: `# Web Development Roadmap 2025
+        category: 'Research Insights',
+        tags: ['Machine Learning', 'AI', 'Tutorial'],
+        image: webImage,
+        date: '2024-12-28',
+        author: 'Farzad',
+    },
+    {
+        id: 'web-development-roadmap',
+        title: 'Complete Web Development Roadmap for 2025',
+        excerpt:
+            'Navigate your journey from beginner to professional web developer with this comprehensive roadmap.',
+        content: `# Web Development Roadmap 2025
 
 ## Frontend Fundamentals
 - HTML5 & Semantic Markup
@@ -207,17 +212,18 @@ Enroll in our Machine Learning course to dive deeper into these concepts with ha
 - Performance Optimization
 
 Join our Full-Stack Web Development course to master all these skills!`,
-    category: "Coding Tutorials",
-    tags: ["Web Development", "Frontend", "Backend"],
-    image: webImage,
-    date: "2024-12-20",
-    author: "Farzad",
-  },
-  {
-    id: "new-course-announcement",
-    title: "New Advanced Python Course Launching Next Month!",
-    excerpt: "Excited to announce our new Advanced Python course covering async programming, decorators, and metaclasses.",
-    content: `# Advanced Python Course Coming Soon!
+        category: 'Coding Tutorials',
+        tags: ['Web Development', 'Frontend', 'Backend'],
+        image: webImage,
+        date: '2024-12-20',
+        author: 'Farzad',
+    },
+    {
+        id: 'new-course-announcement',
+        title: 'New Advanced Python Course Launching Next Month!',
+        excerpt:
+            'Excited to announce our new Advanced Python course covering async programming, decorators, and metaclasses.',
+        content: `# Advanced Python Course Coming Soon!
 
 We're thrilled to announce a brand new course: **Advanced Python: Master the Language**.
 
@@ -245,19 +251,19 @@ Completion of our Python Fundamentals course or equivalent experience.
 ## Early Bird Discount
 
 Sign up before January 31st to get 25% off! Limited spots available.`,
-    category: "Announcements",
-    tags: ["Python", "Advanced", "New Course"],
-    image: pythonImage,
-    date: "2024-12-15",
-    author: "Farzad",
-  },
+        category: 'Announcements',
+        tags: ['Python', 'Advanced', 'New Course'],
+        image: pythonImage,
+        date: '2024-12-15',
+        author: 'Farzad',
+    },
 ];
 
 export const categories = [
-  "All",
-  "Class Updates",
-  "Payment Info",
-  "Coding Tutorials",
-  "Research Insights",
-  "Announcements",
+    'All',
+    'Class Updates',
+    'Payment Info',
+    'Coding Tutorials',
+    'Research Insights',
+    'Announcements',
 ];
