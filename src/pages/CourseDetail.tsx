@@ -179,7 +179,7 @@ const CourseDetail = () => {
                         to="/courses"
                         className="inline-flex items-center text-primary-foreground/70 hover:text-primary-foreground mb-8 transition-colors"
                     >
-                        <ArrowLeft className="mr-2 w-4 h-4 rtl:rotate-180 rtl:ml-2 rtl: mr-0" />
+                        <ArrowLeft className="mr-2 w-4 h-4 rtl:rotate-180 rtl:ml-2 rtl:mr-0" />
                         {t('backToCourses')}
                     </Link>
 
